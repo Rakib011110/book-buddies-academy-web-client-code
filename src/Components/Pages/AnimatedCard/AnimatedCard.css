@@ -1,0 +1,104 @@
+.Cardwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewCardBox {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+}
+
+.reviewCard {
+  position: absolute;
+  width: 97%;
+  height: 97%;
+  background: #000814;
+  border-radius: 20px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(168, 240, 61);
+  overflow: hidden;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+}
+
+.reviewCard h2,
+span {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  background: yel;
+  margin-top: 10px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+span {
+  top: 75%;
+}
+
+.reviewCard .content h3 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+.reviewCard .content p {
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+.reviewCard .content {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.7s ease-in-out;
+}
+
+.reviewCard:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reviewCard:hover h2,
+.reviewCard:hover span {
+  opacity: 0;
+}
+
+.reviewCardBox::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 150%;
+  background: #40e0d0;
+  background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  animation: glowing01 10s linear infinite;
+  transform-origin: center;
+  animation: glowing 10s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
