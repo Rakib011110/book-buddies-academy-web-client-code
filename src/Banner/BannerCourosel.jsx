@@ -1,76 +1,86 @@
-import React from "react";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Parallax } from "react-parallax";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
 import "./Banner.css";
-import { FaDiscourse, FaGraduationCap, FaHome, FaSchool } from "react-icons/fa";
 
-const images = [
-  "https://www.juneauempire.com/wp-content/uploads/2023/05/32641077_web1_Grad2lead.jpg",
-  "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?cs=srgb&dl=pexels-pixabay-267885.jpg&fm=jpg",
-];
+// import required modules
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-const BannerCarousel = () => {
-  const [loaded, setLoaded] = React.useState([]);
-  const [currentSlide, setCurrentSlide] = React.useState(0);
-
-  const [sliderRef] = useKeenSlider({
-    animationEnded(s) {
-      setCurrentSlide(s.details().relativeSlide);
-    },
-    loop: true,
-    initial: 0,
-    autoplay: true, // Enable auto slide
-    interval: 3000, // Set the duration between slides (in milliseconds)
-  });
-
-  React.useEffect(() => {
-    const newLoaded = [...loaded];
-    newLoaded[currentSlide] = true;
-    setLoaded(newLoaded);
-  }, [currentSlide]);
-
+export default function BannerCourosel() {
   return (
-    <div ref={sliderRef} className="keen-slider  ">
-      {images.map((src, idx) => (
-        <div key={idx} className="keen-slider__slide lazy__slide">
-          <img
-            className=""
-            src={
-              loaded[idx]
-                ? src
-                : "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?cs=srgb&dl=pexels-pixabay-267885.jpg&fm=jpg"
-            }
-            alt={`Slide ${idx + 1}`}
-          />
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black opacity-75"></div>
-
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-            {/* <h1 className="text-4xl font-extrabold font-serif textin text-white mb-10">
-              WELCOME TO OUR{" "}
-              <span className="text-cyan-400">
-                {" "}
-                <br />
-                EDUCATION <br /> <span className="text-blue-700">
-                  MASTER
-                </span>{" "}
-              </span>
-            </h1>
-            <p className="text-lg text-white mb-6">
-              A campus is by tradition the land on which a <br /> college or
-              university and related institutional <br />
-              buildings are situated.
-            </p> */}
-          </div>
-
-          {/* Avatars */}
-
-          {/* <div className="absolute bottom-0  mb-28 left-1/2 transform -translate-x-1/2 flex space-x-8">
-            <p className="text-white font-bold">ACADEMY</p>
-          </div> */}
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="">
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            {/* <img
+              className="max-h-screen"
+              src=""
+              alt=""
+            />  */}
+            <Parallax
+              bgImage="https://www.clever.com/wp-content/uploads/2023/06/teenagers-at-desk.jpg"
+              blur={{ min: -40, max: 20 }}
+              className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
+            >
+              <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
+                <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
+                  <h2 className="font-bold md:text-6xl text-orange-500 my-3">
+                    WELCOM TO BOOK BUDDIES ACADEMY
+                  </h2>
+                  <div>
+                    <p className="text-gray-200 font-thin">
+                      Best Dining in Dhaka Division, Bangladesh: See 23652
+                      Tripadvisor traveler reviews of 1076 Dhaka Division
+                      restaurants and search by cuisine, price, location!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Parallax>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <Parallax
+              bgImage="https://www.ppic.org/wp-content/uploads/elementary-school-student-sitting-at-desk-in-classroom-and-writing-with-a-pencil.jpg"
+              blur={{ min: -15, max: 12 }}
+              className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
+            >
+              <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
+                <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
+                  <h2 className="font-bold md:text-6xl text-orange-500 my-3">
+                    WELCOM TO BOOK BUDDIES ACADEMY
+                  </h2>
+                  <div>
+                    <p className="text-gray-200 font-thin">
+                      Best Dining in Dhaka Division, Bangladesh: See 23652
+                      Tripadvisor traveler reviews of 1076 Dhaka Division
+                      restaurants and search by cuisine, price, location!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Parallax>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </>
   );
-};
-
-export default BannerCarousel;
+}

@@ -20,8 +20,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="  container mx-auto   navbar bg-base-100">
-        <div className="navbar-start">
+      <div className="uppercase  font-bold text-orange-600 container mx-auto   navbar bg-base-100">
+        <div className="navbar-start uppercase">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -46,7 +46,7 @@ const Navbar = () => {
               {navOptions}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">
+          <a className="btn btn-ghost  text-xl uppercase">
             Book Buddies Academy
           </a>
         </div>
