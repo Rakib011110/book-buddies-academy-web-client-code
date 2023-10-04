@@ -4,7 +4,7 @@ import { FaBeer, FaCar, FaMoneyCheck, FaShip } from "react-icons/fa";
 const Logo = () => {
   return (
     <div className="mt-20 max-w-7xl mx-auto">
-      <div className="grid grid-cols-3  gap-7">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-7">
         <div
           className=" flex gap-4 uppercase
        "

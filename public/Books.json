@@ -1,0 +1,83 @@
+[
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "category": "Fiction",
+    "description": "A classic novel that explores themes of racial injustice, moral growth, and compassion in the American Deep South.",
+    "image": "https://www.dramaticpublishing.com/media/catalog/product/cache/1/image/300x436/9df78eab33525d08d6e5fb8d27136e95/t/o/to_kill_a_mockingbird_cover-t34.jpg",
+    "publish_date": "July 11, 1960",
+    "price": "$10.99",
+    "language": "English"
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "category": "Fiction",
+    "description": "A dystopian novel depicting a totalitarian regime and the struggle for truth and freedom in a controlled society.",
+    "image": "https://m.media-amazon.com/images/I/61NAx5pd6XL._AC_UF1000,1000_QL80_.jpg",
+    "publish_date": "June 8, 1949",
+    "price": "$12.99",
+    "language": "English"
+  },
+
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "category": "Non-Fiction",
+    "description": "A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the wider world through education.",
+    "image": "https://cdn2.penguin.com.au/covers/original/9780099511021.jpg",
+    "publish_date": "February 20, 2018",
+    "price": "$14.99",
+    "language": "English"
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "category": "Fiction",
+    "description": "A tale of love, wealth, and the American Dream set during the Roaring Twenties.",
+    "image": "https://www.oldcastlebooks.co.uk/images/large/9780857304568.jpg",
+    "publish_date": "April 10, 1925",
+    "price": "$9.99",
+    "language": "English"
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "category": "Fiction",
+    "description": "A story following the experiences of a young man in New York City after being expelled from prep school.",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTUyMDQ2ODI0M15BMl5BanBnXkFtZTgwMDY0NDYxMzI@._V1_.jpg",
+    "publish_date": "July 16, 1951",
+    "price": "$11.99",
+    "language": "English"
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "category": "Fiction",
+    "description": "A dystopian novel that explores a future society where scientific and technological advancements have changed the fabric of human life.",
+    "image": "https://cdn2.penguin.com.au/covers/original/9781784876258.jpg",
+    "publish_date": "March 1, 1932",
+    "price": "$10.99",
+    "language": "English"
+  },
+  {
+    "title": "The Diary of a Young Girl",
+    "author": "Anne Frank",
+    "category": "Non-Fiction",
+    "description": "The diary of Anne Frank, a Jewish girl hiding from the Nazis in Amsterdam during World War II, providing a poignant account of her experiences.",
+    "image": "https://cdn.kobo.com/book-images/51cef710-c44b-4de4-bdba-0e1d2a4d7314/1200/1200/False/the-diary-of-a-young-girl-26.jpg",
+    "publish_date": "June 25, 1947",
+    "price": "$8.99",
+    "language": "English"
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "category": "Fiction",
+    "description": "A fantasy adventure novel following Bilbo Baggins as he embarks on a journey to help a group of Dwarves regain their homeland from a fearsome dragon.",
+    "image": "https://m.media-amazon.com/images/I/61-v4nRBw+L._AC_UF1000,1000_QL80_.jpg",
+    "publish_date": "September 21, 1937",
+    "price": "$12.99",
+    "language": "English"
+  }
+]
