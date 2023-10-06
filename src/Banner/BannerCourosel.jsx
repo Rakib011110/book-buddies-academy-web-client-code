@@ -43,7 +43,30 @@ export default function BannerCourosel() {
               <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
                 <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
                   <h2 className="font-bold md:text-6xl text-orange-500 my-3">
-                    WELCOM TO BOOK BUDDIES ACADEMY
+                    Explore Our <br /> Books
+                  </h2>
+                  <div>
+                    <p className="text-gray-200 font-thin">
+                      Best Dining in Dhaka Division, Bangladesh: See 23652
+                      Tripadvisor traveler reviews of 1076 Dhaka Division
+                      restaurants and search by cuisine, price, location!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Parallax>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <Parallax
+              bgImage="https://i.ibb.co/M8CbZsq/pngwing-com-8.png"
+              blur={{ min: -15, max: 12 }}
+              className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
+            >
+              <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
+                <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
+                  <h2 className="font-bold md:text-6xl text-orange-500 my-3">
+                    Explore Our Class
                   </h2>
                   <div>
                     <p className="text-gray-200 font-thin">

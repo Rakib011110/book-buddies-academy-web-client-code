@@ -2,6 +2,7 @@ import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./Activities.css";
+import Titile from "../../Shared/Ttitle/Titile";
 const carousel = (slider) => {
   const z = 300;
   function rotate() {
@@ -30,27 +31,50 @@ const Activities = () => {
   );
 
   return (
-    <div>
-      <div className="wrapper container mx-auto mt-14">
-        <div className="scene">
-          <div className="carousel keen-slider  " ref={sliderRef}>
-            <div className="rounded-2xl carousel__cell number-slide1 w-[600px] h-[300px] mx-auto  bg-[url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80')] bg-cover ">
-              <h1 className=""> 1</h1>
-            </div>
-            <div className=" bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjqFC_0UvXgKERaDYkOmBQG6Jc_PCM59s_KdIxzdHRXkb1L6oih82eauHCCbf4OE0jutM&usqp=CAU')] carousel__cell number-slide2 w-[600px] h-[300px] mx-auto rounded-2xl">
-              2
-            </div>
-            <div className="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgcZUI6jA0rDuV1BaQQkE5EuY3Y7nQ0HLMCOCX-CAPBvajKHgNJbscJZAoBwWx2El87W4&usqp=CAU')] carousel__cell number-slide3 w-[600px] h-[300px] mx-auto rounded-2xl">
-              3
-            </div>
-            <div className="bg-[url('https://images.unsplash.com/photo-1555196301-ace64f260222?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80')] bg-cover carousel__cell number-slide4 w-[600px] h-[300px] mx-auto bg-green-500 rounded-2xl">
-              4
-            </div>
-            <div className=" bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJUBeechm1iSuBye9xZd95eCBU3_-fFRAiLb2HPrnTBlNC_joaXguXJjAuLVlsuJngd4&usqp=CAU')] carousel__cell number-slide5 w-[600px] h-[300px] mx-auto bg-blue-500 rounded-2xl">
-              5
-            </div>
-            <div className="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgcZUI6jA0rDuV1BaQQkE5EuY3Y7nQ0HLMCOCX-CAPBvajKHgNJbscJZAoBwWx2El87W4&usqp=CAU')] carousel__cell number-slide3 w-[600px] h-[300px] mx-auto rounded-2xl">
-              6
+    <div className="mt-44 ">
+      <Titile
+        heading={"  Gallary"}
+        subHeading={" Wellcome to book buddies"}
+      ></Titile>
+
+      <div className="bg-sky-50">
+        <div>
+          <div className="hero max-w-7xl mx-auto    ">
+            <div className="hero-content flex-col gap-8 justify-between  lg:flex-row-reverse">
+              <div className="text-left   mx-10">
+                <h1 className="text-5xl font-bold">
+                  {" "}
+                  Our Student <span className="text-green-500">
+                    Activities
+                  </span>{" "}
+                  !
+                </h1>
+                <p className="py-6 text-justify ">
+                  Provident cupiditate voluptatem et in. <br /> Quaerat fugiat
+                  ut assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="bg-orange-500 text-white p-1 rounded-xl btn-outline font-sans">
+                  {" "}
+                  Explore Classes{" "}
+                </button>
+              </div>
+              <div className="card flex-shrink-0   w-full  md:max-w-xl sm:max-w-sm  ">
+                <div className="wrapper   ">
+                  <div className="scene">
+                    <div className="carousel keen-slider  " ref={sliderRef}>
+                      <div className="rounded-2xl carousel__cell number-slide1 w-[600px] h-[300px] mx-auto  bg-[url('https://i.ibb.co/9NkXDnW/pngwing-com-2.png')] bg-cover ">
+                        <h1 className=""> </h1>
+                      </div>
+                      <div className="bg-cover bg-[url('https://i.ibb.co/FgvG4gZ/pngwing-com-3.png')] carousel__cell number-slide2 w-[600px] h-[300px] mx-auto rounded-2xl"></div>
+                      <div className="bg-[url('https://i.ibb.co/CHs83Yj/pngwing-com-10.png')] carousel__cell number-slide3 w-[600px] h-[300px] mx-auto rounded-2xl bg-cover"></div>
+                      <div className="bg-[url('https://i.ibb.co/nn0MVQG/pngwing-com-11.png')] bg-cover carousel__cell number-slide4 w-[600px] h-[300px] mx-auto  rounded-2xl"></div>
+                      <div className=" bg-[url('https://i.ibb.co/GsvVhtm/cloudx2.png')] carousel__cell number-slide5 w-[600px] h-[300px] mx-auto  bg-cover  rounded-2xl"></div>
+                      <div className="bg-[url('https://i.ibb.co/3NQBMXs/pngwing-com-12.png')] carousel__cell number-slide3 w-[600px] h-[300px] mx-auto rounded-2xl bg-cover"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

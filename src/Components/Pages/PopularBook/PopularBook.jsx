@@ -25,7 +25,7 @@ const PopularBook = () => {
   });
 
   return (
-    <div className=" mt-28">
+    <div className="  mt-28">
       <div className="sm:flex  justify-center sm:flex-wrap md:flex-nowrap  container mx-auto  gap-16">
         <div className="form-control mb-3">
           <div className="input-group">
@@ -69,7 +69,7 @@ const PopularBook = () => {
           </div>
         </div>
       </div>
-      <div className="bg-orange-50">
+      <div className="bg-sky-50 rounded-3xl">
         <hr className="border border-purple-500 mt-5  md:w-full sm:w-1/2 mx-auto" />
 
         <div className="max-w-7xl mx-auto ">
