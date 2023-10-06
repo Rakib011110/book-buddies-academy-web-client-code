@@ -1,83 +1,304 @@
 [
   {
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "category": "Fiction",
-    "description": "A classic novel that explores themes of racial injustice, moral growth, and compassion in the American Deep South.",
-    "image": "https://www.dramaticpublishing.com/media/catalog/product/cache/1/image/300x436/9df78eab33525d08d6e5fb8d27136e95/t/o/to_kill_a_mockingbird_cover-t34.jpg",
-    "publish_date": "July 11, 1960",
-    "price": "$10.99",
-    "language": "English"
+    "title": "A Wrinkle in Time",
+    "author": "Madeleine L'Engle",
+    "description": "A science fantasy novel that follows the adventures of a young girl, her brother, and their friend as they travel through time and space to rescue their father.",
+    "image": "https://lumiere-a.akamaihd.net/v1/images/p_awrinkleintime_0862db68.jpeg",
+    "publish_date": "January 1, 1962",
+    "price": "$9.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "science_fiction"
   },
   {
-    "title": "1984",
-    "author": "George Orwell",
-    "category": "Fiction",
-    "description": "A dystopian novel depicting a totalitarian regime and the struggle for truth and freedom in a controlled society.",
-    "image": "https://m.media-amazon.com/images/I/61NAx5pd6XL._AC_UF1000,1000_QL80_.jpg",
-    "publish_date": "June 8, 1949",
+    "title": "Artemis Fowl",
+    "author": "Eoin Colfer",
+    "description": "A science fantasy novel about a young Irish criminal mastermind who kidnaps a fairy in order to restore his family's wealth.",
+    "image": "https://m.media-amazon.com/images/I/815qVQVm0QL._AC_UF894,1000_QL80_.jpg",
+    "publish_date": "April 26, 2001",
+    "price": "$10.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "science_fiction"
+  },
+  {
+    "title": "The Giver",
+    "author": "Lois Lowry",
+    "description": "A dystopian novel that follows a young boy named Jonas as he uncovers the dark secrets of his society.",
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630661894l/249747.jpg",
+    "publish_date": "April 26, 1993",
+    "price": "$8.99",
+    "language": "English",
+    "author_image": "",
+    "category": "science_fiction"
+  },
+  {
+    "title": "Ender's Game",
+    "author": "Orson Scott Card",
+    "description": "A thrilling science fiction novel following a young prodigy as he prepares for an alien invasion.",
+    "image": "https://www.jocolibrary.org/sites/default/files/2021-09/Ender%27s%20Game.jpg",
+    "publish_date": "January 15, 1985",
     "price": "$12.99",
-    "language": "English"
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "science_fiction"
   },
 
   {
-    "title": "Educated",
-    "author": "Tara Westover",
-    "category": "Non-Fiction",
-    "description": "A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the wider world through education.",
-    "image": "https://cdn2.penguin.com.au/covers/original/9780099511021.jpg",
-    "publish_date": "February 20, 2018",
-    "price": "$14.99",
-    "language": "English"
-  },
-  {
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "category": "Fiction",
-    "description": "A tale of love, wealth, and the American Dream set during the Roaring Twenties.",
-    "image": "https://www.oldcastlebooks.co.uk/images/large/9780857304568.jpg",
-    "publish_date": "April 10, 1925",
-    "price": "$9.99",
-    "language": "English"
-  },
-  {
-    "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
-    "category": "Fiction",
-    "description": "A story following the experiences of a young man in New York City after being expelled from prep school.",
-    "image": "https://m.media-amazon.com/images/M/MV5BMTUyMDQ2ODI0M15BMl5BanBnXkFtZTgwMDY0NDYxMzI@._V1_.jpg",
-    "publish_date": "July 16, 1951",
-    "price": "$11.99",
-    "language": "English"
-  },
-  {
-    "title": "Brave New World",
-    "author": "Aldous Huxley",
-    "category": "Fiction",
-    "description": "A dystopian novel that explores a future society where scientific and technological advancements have changed the fabric of human life.",
-    "image": "https://cdn2.penguin.com.au/covers/original/9781784876258.jpg",
-    "publish_date": "March 1, 1932",
-    "price": "$10.99",
-    "language": "English"
-  },
-  {
-    "title": "The Diary of a Young Girl",
-    "author": "Anne Frank",
-    "category": "Non-Fiction",
-    "description": "The diary of Anne Frank, a Jewish girl hiding from the Nazis in Amsterdam during World War II, providing a poignant account of her experiences.",
-    "image": "https://cdn.kobo.com/book-images/51cef710-c44b-4de4-bdba-0e1d2a4d7314/1200/1200/False/the-diary-of-a-young-girl-26.jpg",
-    "publish_date": "June 25, 1947",
+    "title": "Anne of Green Gables",
+    "author": "L.M. Montgomery",
+    "description": "A heartwarming story about a spirited orphan girl named Anne who finds a new home and family in Green Gables.",
+    "image": "https://m.media-amazon.com/images/M/MV5BMzIyOTI5MjMxMl5BMl5BanBnXkFtZTgwODE4NDY3NzE@._V1_.jpg",
+    "publish_date": "June 17, 1908",
     "price": "$8.99",
-    "language": "English"
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "drama"
   },
   {
-    "title": "The Hobbit",
-    "author": "J.R.R. Tolkien",
-    "category": "Fiction",
-    "description": "A fantasy adventure novel following Bilbo Baggins as he embarks on a journey to help a group of Dwarves regain their homeland from a fearsome dragon.",
-    "image": "https://m.media-amazon.com/images/I/61-v4nRBw+L._AC_UF1000,1000_QL80_.jpg",
-    "publish_date": "September 21, 1937",
-    "price": "$12.99",
-    "language": "English"
+    "title": "Little Women",
+    "author": "Louisa May Alcott",
+    "description": "A classic novel that follows the lives of the four March sisters as they grow from childhood to womanhood.",
+    "image": "https://m.media-amazon.com/images/M/MV5BOGMwNGY1NmUtYTViZS00MGZlLWJiNjItM2ViOTA0NjI0MTM0XkEyXkFqcGdeQXVyNDczNjA4MjY@._V1_.jpg",
+    "publish_date": "September 30, 1868",
+    "price": "$7.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "drama"
+  },
+  {
+    "title": "The Secret Garden",
+    "author": "Frances Hodgson Burnett",
+    "description": "A beautiful story about a young girl named Mary who discovers a hidden, neglected garden and the healing power it holds.",
+    "image": "https://flxt.tmsimg.com/assets/p14938_p_v8_ah.jpg",
+    "publish_date": "August 16, 1911",
+    "price": "$8.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "drama"
+  },
+  {
+    "title": "Charlotte's Web",
+    "author": "E.B. White",
+    "description": "A touching tale of friendship between a young pig named Wilbur and a clever spider named Charlotte.",
+    "image": "https://embed.cdn.pais.scholastic.com/v1/channels/clubs-us/products/identifiers/isbn/9780590302715/primary/renditions/500",
+    "publish_date": "October 15, 1952",
+    "price": "$7.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "drama"
+  },
+
+  {
+    "title": "Alice's Adventures in Wonderland",
+    "author": "Lewis Carroll",
+    "description": "A whimsical and imaginative tale of a young girl named Alice and her extraordinary adventures in Wonderland.",
+    "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781442458000/alices-adventures-in-wonderland-9781442458000_hr.jpg",
+    "publish_date": "July 4, 1865",
+    "price": "$6.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "classic"
+  },
+  {
+    "title": "Peter Pan",
+    "author": "J.M. Barrie",
+    "description": "An enchanting story about the boy who never grows up and his adventures in the magical world of Neverland.",
+    "image": "https://lumiere-a.akamaihd.net/v1/images/p_peterpan_19755_96e77c5b.jpeg",
+    "publish_date": "October 11, 1911",
+    "price": "$7.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "classic"
+  },
+  {
+    "title": "The Adventures of Tom Sawyer",
+    "author": "Mark Twain",
+    "description": "A classic novel that follows the mischievous and adventurous young boy, Tom Sawyer, in a small town on the Mississippi River.",
+    "image": "https://rupapublications.co.in/wp-content/uploads/2023/05/The-Adventures-of-Tom-Sawyer-Front-scaled.jpg",
+    "publish_date": "February 17, 1876",
+    "price": "$6.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "classic"
+  },
+  {
+    "title": "The Wind in the Willows",
+    "author": "Kenneth Grahame",
+    "description": "A delightful tale of the adventures of Mole, Ratty, Badger, and Toad in the English countryside.",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjIyNzA0MTUyNF5BMl5BanBnXkFtZTcwMjc3NTY1Mg@@._V1_.jpg",
+    "publish_date": "October 8, 1908",
+    "price": "$7.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "classic"
+  },
+
+  {
+    "title": "Percy Jackson and the Olympians: The Lightning Thief",
+    "author": "Rick Riordan",
+    "description": "An exciting fantasy adventure following the journey of Percy Jackson, a demigod and the son of Poseidon.",
+    "image": "https://images.moviesanywhere.com/96bd7bb89837cbc977226e3f34bdfd74/07023173-c479-4877-999a-964e01d01f92.jpg",
+    "publish_date": "June 28, 2005",
+    "price": "$9.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "popular_books"
+  },
+  {
+    "title": "Diary of a Wimpy Kid",
+    "author": "Jeff Kinney",
+    "description": "A hilarious and relatable diary-style book following the life of Greg Heffley, a middle school student.",
+    "image": "https://image.tmdb.org/t/p/original/iW6ixzkrvdrcxk0umiLZMtlSl9L.jpg",
+    "publish_date": "April 1, 2007",
+    "price": "$8.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "popular_books"
+  },
+  {
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "description": "A gripping dystopian novel following Katniss Everdeen as she fights for survival in a brutal televised competition.",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjA4NDg3NzYxMF5BMl5BanBnXkFtZTcwNTgyNzkyNw@@._V1_.jpg",
+    "publish_date": "September 14, 2008",
+    "price": "$10.99",
+    "language": "English",
+    "author_image": "",
+    "category": "popular_books"
+  },
+  {
+    "title": "A Series of Unfortunate Events: The Bad Beginning",
+    "author": "Lemony Snicket",
+    "description": "The first book in a captivating series following the Baudelaire orphans as they uncover family secrets and evade the clutches of the evil Count Olaf.",
+    "image": "https://storage.googleapis.com/circlesoft/document/photos/002/824/842/large_9781460755921.jpg?1617155076",
+    "publish_date": "September 30, 1999",
+    "price": "$7.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "popular_books"
+  },
+  {
+    "title": "Where the Wild Things Are",
+    "author": "Maurice Sendak",
+    "description": "A classic children's book that tells the story of Max and his imaginative journey to the land of the Wild Things.",
+    "image": "https://images.booksense.com/images/522/810/9781636810522.jpg",
+    "publish_date": "April 19, 1963",
+    "price": "$8.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "story"
+  },
+  {
+    "title": "The Very Hungry Caterpillar",
+    "author": "Eric Carle",
+    "description": "A beloved children's book that follows the journey of a hungry caterpillar as it transforms into a butterfly.",
+    "image": "https://www.chippenham.gov.uk/wp-content/uploads/2022/05/caterpillar-scaled.jpeg",
+    "publish_date": "June 3, 1969",
+    "price": "$7.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "story"
+  },
+
+  {
+    "title": "The Tale of Peter Rabbit",
+    "author": "Beatrix Potter",
+    "description": "A timeless tale about a mischievous young rabbit named Peter and his adventures in Mr. McGregor's garden.",
+    "image": "https://m.media-amazon.com/images/I/A1KzHvAir+L._AC_UF1000,1000_QL80_.jpg",
+    "publish_date": "October 2, 1902",
+    "price": "$5.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "story"
+  },
+  {
+    "title": "Goosebumps: Welcome to Dead House",
+    "author": "R.L. Stine",
+    "description": "The first book in the Goosebumps series, filled with spooky and thrilling tales for young readers.",
+    "image": "https://static.wikia.nocookie.net/goosebumps/images/c/c5/Welcometodeadhouse-reprint.jpg/revision/latest?cb=20160727145254",
+    "publish_date": "July 1992",
+    "price": "$6.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "horror"
+  },
+  {
+    "title": "Coraline",
+    "author": "Neil Gaiman",
+    "description": "A dark fantasy children's novella about a young girl named Coraline who discovers a parallel world with sinister secrets.",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjM2NTVkYjctYTMxZi00OTVlLWEyNzMtODg4MDRkNjBhYjZhXkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_FMjpg_UX1000_.jpg",
+    "publish_date": "February 24, 2002",
+    "price": "$7.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "horror"
+  },
+  {
+    "title": "Scary Stories to Tell in the Dark",
+    "author": "Alvin Schwartz",
+    "description": "A collection of scary and eerie tales that will send shivers down young readers' spines.",
+    "image": "https://m.media-amazon.com/images/M/MV5BMmI1MGE0ODMtYWRlZC00ZDUxLWIyNGItYjgyNzhhMTRlOTI2XkEyXkFqcGdeQXVyOTQ5MTIwMjM@._V1_FMjpg_UX1000_.jpg",
+    "publish_date": "October 1, 1981",
+    "price": "$6.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "horror"
+  },
+  {
+    "title": "The Witches",
+    "author": "Roald Dahl",
+    "description": "A thrilling and slightly creepy story about a young boy who discovers a society of witches plotting to turn children into mice.",
+    "image": "https://www.penguinrandomhouse.co.za/sites/penguinbooks.co.za/files/styles/jacket-large/public/cover/The%20Witches%20FTI%209780241438817.jpg?itok=CoT7oN62",
+    "publish_date": "October 27, 1983",
+    "price": "$7.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "horror"
+  },
+
+  {
+    "title": "Dog Man",
+    "author": "Dav Pilkey",
+    "description": "An adventurous and hilarious comic series about a part-dog, part-man superhero.",
+    "image": "https://m.media-amazon.com/images/I/71NY-jyZOLL._AC_UF1000,1000_QL80_.jpg",
+    "publish_date": "August 30, 2016",
+    "price": "$9.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "comics"
+  },
+  {
+    "title": "Diary of a Wimpy Kid",
+    "author": "Jeff Kinney",
+    "description": "A hilarious and relatable diary-style book following the life of Greg Heffley, a middle school student.",
+    "image": "https://resizing.flixster.com/oMZq4JnYQfAF3a267ONjfKKlzxg=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzcxNTI1NGVhLWU5YWQtNDkwYy1hMjUyLTZjMDEzOTg3NzEyZS5qcGc=",
+    "publish_date": "April 1, 2007",
+    "price": "$8.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "comics"
+  },
+  {
+    "title": "Raina Telgemeier Box Set: Smile, Sisters, Drama, Ghosts",
+    "author": "Raina Telgemeier",
+    "description": "A set of captivating graphic novels that explore various themes such as family, friendship, and self-discovery.",
+    "image": "https://d3ddkgxe55ca6c.cloudfront.net/assets/t1550251379/a/c0/ba/199835-ml-1852743.jpg",
+    "publish_date": "October 29, 2019",
+    "price": "$29.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "comics"
+  },
+  {
+    "title": "Big Nate: In a Class by Himself",
+    "author": "Lincoln Peirce",
+    "description": "A humorous comic series following the life of Nate Wright, a sixth-grader, and his adventures in school and life.",
+    "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781524861766/big-nate-stays-classy-9781524861766_hr.jpg",
+    "publish_date": "March 23, 2010",
+    "price": "$7.99",
+    "language": "English",
+    "author_image": "author_image_url",
+    "category": "comics"
   }
 ]

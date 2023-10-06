@@ -4,56 +4,37 @@ import { Link } from "react-router-dom";
 
 const PopularBook = () => {
   const [books, setBooks] = useState([]);
-  const [filteredBooks, setFilteredBooks] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
   useEffect(() => {
+    // Fetch books data from the provided JSON file
     fetch("Books.json")
       .then((res) => res.json())
-      .then((data) => setBooks(data));
+      .then((data) => setBooks(data.slice(0, 4)));
   }, []);
 
-  const handleSearchInputChange = (event) => {
-    const searchTerm = event.target.value.toLowerCase();
-    setSearchTerm(searchTerm);
-    filterBooks(searchTerm, selectedCategory);
-  };
-
-  const handleCategorySelectChange = (event) => {
-    const category = event.target.value;
-    setSelectedCategory(category);
-    filterBooks(searchTerm, category);
-  };
-
-  const filterBooks = (searchTerm, category) => {
-    let filtered = books;
-
-    if (searchTerm) {
-      filtered = filtered.filter(
-        (book) =>
-          book.title.toLowerCase().includes(searchTerm) ||
-          book.description.toLowerCase().includes(searchTerm)
-      );
-    }
-
-    if (category && category !== "Pick category") {
-      filtered = filtered.filter((book) => book.category === category);
-    }
-
-    setFilteredBooks(filtered);
-  };
+  // Filter books based on search term and selected category
+  const filteredBooks = books.filter((book) => {
+    const titleMatches = book.title
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    const categoryMatches =
+      selectedCategory === "All" || book.category === selectedCategory;
+    return titleMatches && categoryMatches;
+  });
 
   return (
     <div className=" mt-28">
-      <div className="flex justify-center container mx-auto flex-wrap gap-16">
-        <div className="form-control ">
+      <div className="sm:flex  justify-center sm:flex-wrap md:flex-nowrap  container mx-auto  gap-16">
+        <div className="form-control mb-3">
           <div className="input-group">
             <input
-              value={searchTerm}
-              onChange={handleSearchInputChange}
               type="text"
-              placeholder="Search…"
+              placeholder="Search..."
               className="input input-bordered w-96"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
             />
             <button className="btn btn-square">
               <svg
@@ -77,26 +58,23 @@ const PopularBook = () => {
           <div className="input-group">
             <select
               className="select select-bordered w-96"
-              onChange={handleCategorySelectChange}
               value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
             >
-              <option value="" disabled>
-                Pick category
-              </option>
-              <option value="">All Categories</option>
+              <option value="All">All Categories</option>
               <option value="Fiction">Fiction</option>
-              <option value="Non-Fiction">Non-Fiction</option>
+              <option value="Non-Fiction">Fiction</option>
             </select>
             <button className="btn">Go</button>
           </div>
         </div>
       </div>
       <div className="bg-orange-50">
-        <hr className="border border-purple-500 mt-5  w-full" />
+        <hr className="border border-purple-500 mt-5  md:w-full sm:w-1/2 mx-auto" />
 
         <div className="max-w-7xl mx-auto ">
-          <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4">
-            {books.map((book) => (
+          <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4">
+            {filteredBooks.map((book) => (
               <div>
                 <div>
                   <div className=" mx-auto mb-4 mt-10 ">
