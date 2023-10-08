@@ -4,6 +4,7 @@ import Logo from "../Shared/Logo/Logo";
 import PopularBook from "../Pages/PopularBook/PopularBook";
 import Activities from "../Pages/Activities/Activities";
 import Footer from "../Shared/Footer";
+import CoursesClass from "../Pages/CoursesClass/CoursesClass";
 
 const Home = () => {
   return (
@@ -12,9 +13,7 @@ const Home = () => {
       <Logo />
       <PopularBook />
       <Activities />
-      <div className="mt-40 ">
-        <Footer />
-      </div>
+      <CoursesClass />
     </div>
   );
 };

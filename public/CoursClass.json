@@ -1,0 +1,258 @@
+[
+  {
+    "category_name": "Science",
+    "subject_name": "Physics",
+    "teacher": "John Smith",
+    "teacher_picture_url": "https://example.com/teacher_john_smith.jpg",
+    "class_description": "Explore the fundamental principles of physics and the laws that govern our universe. This class includes hands-on experiments and exciting demonstrations.",
+    "class_size": 20,
+    "available_seats": 5,
+    "class_location": "Room 101",
+    "eligibility": "Ages 12-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$100",
+    "class_picture_url": "https://example.com/physics_class.jpg"
+  },
+
+  {
+    "category_name": "Science",
+    "subject_name": "Chemistry",
+    "teacher": "Lisa Johnson",
+    "teacher_picture_url": "https://example.com/teacher_lisa_johnson.jpg",
+    "class_description": "Dive into the fascinating world of chemical reactions, elements, and compounds. Conduct experiments and explore the amazing properties of matter.",
+    "class_size": 18,
+    "available_seats": 2,
+    "class_location": "Lab 2",
+    "eligibility": "Ages 13-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$90",
+    "class_picture_url": "https://example.com/chemistry_class.jpg"
+  },
+  {
+    "category_name": "Science",
+    "subject_name": "Biology",
+    "teacher": "Michael Davis",
+    "teacher_picture_url": "https://example.com/teacher_michael_davis.jpg",
+    "class_description": "Discover the wonders of life and living organisms. Learn about cells, genetics, ecosystems, and more through interactive lessons and experiments.",
+    "class_size": 22,
+    "available_seats": 4,
+    "class_location": "Lab 1",
+    "eligibility": "Ages 12-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$95",
+    "class_picture_url": "https://example.com/biology_class.jpg"
+  },
+  {
+    "category_name": "Science",
+    "subject_name": "Mathematics",
+    "teacher": "Emily Brown",
+    "teacher_picture_url": "https://example.com/teacher_emily_brown.jpg",
+    "class_description": "Enhance your mathematical skills and problem-solving abilities. Cover various topics in algebra, geometry, calculus, and more through engaging lessons.",
+    "class_size": 20,
+    "available_seats": 3,
+    "class_location": "Room 102",
+    "eligibility": "Ages 12-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$85",
+    "class_picture_url": "https://example.com/mathematics_class.jpg"
+  },
+
+  {
+    "category_name": "Art",
+
+    "subject_name": "Visual Arts",
+    "teacher": "Sophia Lee",
+    "teacher_picture_url": "https://example.com/teacher_sophia_lee.jpg",
+    "class_description": "Unleash your creativity through various art forms like painting, drawing, and sculpture. Learn techniques and express yourself artistically in this engaging class.",
+    "class_size": 25,
+    "available_seats": 7,
+    "class_location": "Art Studio",
+    "eligibility": "Ages 10-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$80",
+    "class_picture_url": "https://example.com/visual_arts_class.jpg"
+  },
+  {
+    "category_name": "Art",
+
+    "subject_name": "Music",
+    "teacher": "David Wilson",
+    "teacher_picture_url": "https://example.com/teacher_david_wilson.jpg",
+    "class_description": "Immerse yourself in the world of music. Learn to play instruments, understand musical theory, and create beautiful melodies. All skill levels welcome!",
+    "class_size": 20,
+    "available_seats": 5,
+    "class_location": "Music Room",
+    "eligibility": "Ages 11-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$75",
+    "class_picture_url": "https://example.com/music_class.jpg"
+  },
+  {
+    "category_name": "Art",
+
+    "subject_name": "Dance",
+    "teacher": "Alexa Martinez",
+    "teacher_picture_url": "https://example.com/teacher_alexa_martinez.jpg",
+    "class_description": "Move and groove in this dynamic dance class. Learn various dance styles, choreography, and expression. Join us for a fun and energetic experience!",
+    "class_size": 15,
+    "available_seats": 2,
+    "class_location": "Dance Studio",
+    "eligibility": "Ages 10-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$70",
+    "class_picture_url": "https://example.com/dance_class.jpg"
+  },
+  {
+    "category_name": "Art",
+
+    "subject_name": "Drama",
+    "teacher": "Andrew Johnson",
+    "teacher_picture_url": "https://example.com/teacher_andrew_johnson.jpg",
+    "class_description": "Unleash your creativity on stage. Learn acting techniques, script analysis, and develop your theatrical skills. All aspiring actors welcome!",
+    "class_size": 18,
+    "available_seats": 4,
+    "class_location": "Theater",
+    "eligibility": "Ages 11-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$85",
+    "class_picture_url": "https://example.com/drama_class.jpg"
+  },
+
+  {
+    "category_name": "History",
+
+    "subject_name": "Ancient History",
+    "teacher": "Samuel Green",
+    "teacher_picture_url": "https://example.com/teacher_samuel_green.jpg",
+    "class_description": "Journey back in time to explore ancient civilizations, their cultures, achievements, and historical events. Gain a deeper understanding of our past.",
+    "class_size": 20,
+    "available_seats": 3,
+    "class_location": "Room 210",
+    "eligibility": "Ages 13-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$80",
+    "class_picture_url": "https://example.com/ancient_history_class.jpg"
+  },
+  {
+    "category_name": "History",
+
+    "subject_name": "Modern History",
+    "teacher": "Olivia Turner",
+    "teacher_picture_url": "https://example.com/teacher_olivia_turner.jpg",
+    "class_description": "Examine the major events and social, political, and economic developments that have shaped the modern world. Engage in lively discussions and analysis.",
+    "class_size": 18,
+    "available_seats": 2,
+    "class_location": "Room 211",
+    "eligibility": "Ages 14-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$85",
+    "class_picture_url": "https://example.com/modern_history_class.jpg"
+  },
+  {
+    "category_name": "History",
+
+    "subject_name": "World History",
+    "teacher": "Daniel Miller",
+    "teacher_picture_url": "https://example.com/teacher_daniel_miller.jpg",
+    "class_description": "Embark on a global journey through different historical eras, examining key events, cultures, and their impact on the world we live in today.",
+    "class_size": 22,
+    "available_seats": 4,
+    "class_location": "Room 212",
+    "eligibility": "Ages 13-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$90",
+    "class_picture_url": "https://example.com/world_history_class.jpg"
+  },
+  {
+    "category_name": "History",
+
+    "subject_name": "European History",
+    "teacher": "Sophie Davis",
+    "teacher_picture_url": "https://example.com/teacher_sophie_davis.jpg",
+    "class_description": "Delve into the rich tapestry of European history, from ancient civilizations to modern times. Analyze pivotal moments that shaped Europe.",
+    "class_size": 20,
+    "available_seats": 3,
+    "class_location": "Room 213",
+    "eligibility": "Ages 14-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$85",
+    "class_picture_url": "https://example.com/european_history_class.jpg"
+  },
+
+  {
+    "category_name": "Physical Education",
+
+    "subject_name": "Gymnastics",
+    "teacher": "Matthew Brown",
+    "teacher_picture_url": "https://example.com/teacher_matthew_brown.jpg",
+    "class_description": "Master fundamental gymnastic skills and techniques, improve flexibility, strength, and balance. Have fun while staying active and healthy.",
+    "class_size": 25,
+    "available_seats": 7,
+    "class_location": "Gymnasium",
+    "eligibility": "Ages 8-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$70",
+    "class_picture_url": "https://example.com/gymnastics_class.jpg"
+  },
+  {
+    "category_name": "Physical Education",
+
+    "subject_name": "Swimming",
+    "teacher": "Laura Smith",
+    "teacher_picture_url": "https://example.com/teacher_laura_smith.jpg",
+    "class_description": "Learn essential swimming strokes, water safety, and improve your aquatic abilities. Enjoy a refreshing and invigorating swimming experience.",
+    "class_size": 20,
+    "available_seats": 5,
+    "class_location": "Swimming Pool",
+    "eligibility": "Ages 9-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$75",
+    "class_picture_url": "https://example.com/swimming_class.jpg"
+  },
+  {
+    "category_name": "Physical Education",
+
+    "subject_name": "Athletics",
+    "teacher": "Peter Clark",
+    "teacher_picture_url": "https://example.com/teacher_peter_clark.jpg",
+    "class_description": "Enhance your athletic abilities in various track and field events. Focus on sprinting, jumping, throwing, and endurance. Train like a champion!",
+    "class_size": 18,
+    "available_seats": 4,
+    "class_location": "Athletics Field",
+    "eligibility": "Ages 10-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$80",
+    "class_picture_url": "https://example.com/athletics_class.jpg"
+  },
+  {
+    "category_name": "Physical Education",
+
+    "subject_name": "Yoga",
+    "teacher": "Sophie Turner",
+    "teacher_picture_url": "https://example.com/teacher_sophie_turner.jpg",
+    "class_description": "Find inner peace and physical wellness through yoga. Learn poses, breathing techniques, and meditation. Improve your flexibility and focus.",
+    "class_size": 22,
+    "available_seats": 6,
+    "class_location": "Yoga Studio",
+    "eligibility": "Ages 10-16",
+    "max_enrollment": 16,
+    "joining_deadline": "2023-11-30",
+    "enrollment_price": "$65",
+    "class_picture_url": "https://example.com/yoga_class.jpg"
+  }
+]

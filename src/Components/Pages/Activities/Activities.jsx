@@ -37,7 +37,7 @@ const Activities = () => {
         subHeading={" Wellcome to book buddies"}
       ></Titile>
 
-      <div className="bg-sky-50">
+      <div className="bg-sky-50 rounded-full">
         <div>
           <div className="hero max-w-7xl mx-auto    ">
             <div className="hero-content flex-col gap-8 justify-between  lg:flex-row-reverse">
@@ -63,7 +63,7 @@ const Activities = () => {
                 <div className="wrapper   ">
                   <div className="scene">
                     <div className="carousel keen-slider  " ref={sliderRef}>
-                      <div className="rounded-2xl carousel__cell number-slide1 w-[600px] h-[300px] mx-auto  bg-[url('https://i.ibb.co/9NkXDnW/pngwing-com-2.png')] bg-cover ">
+                      <div className="rounded-2xl carousel__cell number-slide1 w-[600px] h-[300px] mx-auto  bg-[url('https://i.ibb.co/mGYmJx5/pngwing-com-13.png')] bg-cover ">
                         <h1 className=""> </h1>
                       </div>
                       <div className="bg-cover bg-[url('https://i.ibb.co/FgvG4gZ/pngwing-com-3.png')] carousel__cell number-slide2 w-[600px] h-[300px] mx-auto rounded-2xl"></div>
