@@ -37,7 +37,7 @@ const Activities = () => {
         subHeading={" Wellcome to book buddies"}
       ></Titile>
 
-      <div className="bg-sky-50 rounded-full">
+      <div className="bg-sky-100 rounded-t-full">
         <div>
           <div className="hero max-w-7xl mx-auto    ">
             <div className="hero-content flex-col gap-8 justify-between  lg:flex-row-reverse">
@@ -66,11 +66,11 @@ const Activities = () => {
                       <div className="rounded-2xl carousel__cell number-slide1 w-[600px] h-[300px] mx-auto  bg-[url('https://i.ibb.co/mGYmJx5/pngwing-com-13.png')] bg-cover ">
                         <h1 className=""> </h1>
                       </div>
-                      <div className="bg-cover bg-[url('https://i.ibb.co/FgvG4gZ/pngwing-com-3.png')] carousel__cell number-slide2 w-[600px] h-[300px] mx-auto rounded-2xl"></div>
-                      <div className="bg-[url('https://i.ibb.co/CHs83Yj/pngwing-com-10.png')] carousel__cell number-slide3 w-[600px] h-[300px] mx-auto rounded-2xl bg-cover"></div>
-                      <div className="bg-[url('https://i.ibb.co/nn0MVQG/pngwing-com-11.png')] bg-cover carousel__cell number-slide4 w-[600px] h-[300px] mx-auto  rounded-2xl"></div>
-                      <div className=" bg-[url('https://i.ibb.co/GsvVhtm/cloudx2.png')] carousel__cell number-slide5 w-[600px] h-[300px] mx-auto  bg-cover  rounded-2xl"></div>
-                      <div className="bg-[url('https://i.ibb.co/3NQBMXs/pngwing-com-12.png')] carousel__cell number-slide3 w-[600px] h-[300px] mx-auto rounded-2xl bg-cover"></div>
+                      <div className="shadow-2xl bg-cover bg-[url('https://i.ibb.co/FgvG4gZ/pngwing-com-3.png')] carousel__cell number-slide2 w-[600px] h-[300px] mx-auto rounded-2xl"></div>
+                      <div className="shadow-2xl bg-[url('https://i.ibb.co/CHs83Yj/pngwing-com-10.png')] carousel__cell number-slide3 w-[600px] h-[300px] mx-auto rounded-2xl bg-cover"></div>
+                      <div className="shadow-2xl bg-[url('https://i.ibb.co/nn0MVQG/pngwing-com-11.png')] bg-cover carousel__cell number-slide4 w-[600px] h-[300px] mx-auto  rounded-2xl"></div>
+                      <div className="shadow-2xl  bg-[url('https://i.ibb.co/GsvVhtm/cloudx2.png')] carousel__cell number-slide5 w-[600px] h-[300px] mx-auto  bg-cover  rounded-2xl"></div>
+                      <div className="shadow-2xl bg-[url('https://i.ibb.co/3NQBMXs/pngwing-com-12.png')] carousel__cell number-slide3 w-[600px] h-[300px] mx-auto rounded-2xl bg-cover"></div>
                     </div>
                   </div>
                 </div>

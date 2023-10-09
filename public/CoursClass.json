@@ -12,7 +12,7 @@
     "max_enrollment": 16,
     "joining_deadline": "2023-11-30",
     "enrollment_price": "$100",
-    "class_picture_url": "https://example.com/physics_class.jpg"
+    "class_picture_url": "https://media.istockphoto.com/id/1003417306/photo/female-teacher-showing-plasma-ball-during-lesson-at-school.jpg?s=612x612&w=0&k=20&c=VjKkOAL-n1kc5ChiJtROCHfJsLX_-pc3x2h0LpS6ioo="
   },
 
   {
@@ -28,7 +28,7 @@
     "max_enrollment": 16,
     "joining_deadline": "2023-11-30",
     "enrollment_price": "$90",
-    "class_picture_url": "https://example.com/chemistry_class.jpg"
+    "class_picture_url": "https://img.freepik.com/free-photo/young-boy-learning-more-about-chemistry-class_23-2149068318.jpg"
   },
   {
     "category_name": "Science",
@@ -43,7 +43,7 @@
     "max_enrollment": 16,
     "joining_deadline": "2023-11-30",
     "enrollment_price": "$95",
-    "class_picture_url": "https://example.com/biology_class.jpg"
+    "class_picture_url": "https://media.istockphoto.com/id/546007166/photo/botanist-teaches-elementary-students-about-botany.jpg?s=612x612&w=0&k=20&c=XB5oTnEqXLQpASd3VtzmVTyYDQpRXur5rmhkfMTGTww="
   },
   {
     "category_name": "Science",
@@ -58,7 +58,7 @@
     "max_enrollment": 16,
     "joining_deadline": "2023-11-30",
     "enrollment_price": "$85",
-    "class_picture_url": "https://example.com/mathematics_class.jpg"
+    "class_picture_url": "https://timemaster.ae/uploads/course/Maths_2021_06_07_10_31_01.webp"
   },
 
   {
@@ -75,7 +75,7 @@
     "max_enrollment": 16,
     "joining_deadline": "2023-11-30",
     "enrollment_price": "$80",
-    "class_picture_url": "https://example.com/visual_arts_class.jpg"
+    "class_picture_url": "https://kzookids.com/wp-content/uploads/sites/3/2016/12/Art-Classes-for-Kids-Feature-Photo.jpg"
   },
   {
     "category_name": "Art",
@@ -91,7 +91,7 @@
     "max_enrollment": 16,
     "joining_deadline": "2023-11-30",
     "enrollment_price": "$75",
-    "class_picture_url": "https://example.com/music_class.jpg"
+    "class_picture_url": "https://melodica.ae/wp-content/uploads/2019/04/Why-get-Music-Classes-for-Kids.jpg"
   },
   {
     "category_name": "Art",
@@ -107,7 +107,7 @@
     "max_enrollment": 16,
     "joining_deadline": "2023-11-30",
     "enrollment_price": "$70",
-    "class_picture_url": "https://example.com/dance_class.jpg"
+    "class_picture_url": "https://uploads-ssl.webflow.com/609da2a5c152cbf24cd6450f/60ba9af0eafd7e40b6347a3a_hip%20hop%20student%20in%20lets%20dance%20class.jpg"
   },
   {
     "category_name": "Art",
@@ -123,7 +123,7 @@
     "max_enrollment": 16,
     "joining_deadline": "2023-11-30",
     "enrollment_price": "$85",
-    "class_picture_url": "https://example.com/drama_class.jpg"
+    "class_picture_url": "https://marrzipandrama.co.nz/wp-content/uploads/2021/01/Kids-luaghing-on-stage-for-drama-play-about-stargazing.jpg"
   },
 
   {
@@ -140,7 +140,7 @@
     "max_enrollment": 16,
     "joining_deadline": "2023-11-30",
     "enrollment_price": "$80",
-    "class_picture_url": "https://example.com/ancient_history_class.jpg"
+    "class_picture_url": "https://schoolshistory.org.uk/topics/wp-content/uploads/2018/10/teaching-kids-history-with-computers.jpg"
   },
   {
     "category_name": "History",
@@ -156,7 +156,7 @@
     "max_enrollment": 16,
     "joining_deadline": "2023-11-30",
     "enrollment_price": "$85",
-    "class_picture_url": "https://example.com/modern_history_class.jpg"
+    "class_picture_url": ""
   },
   {
     "category_name": "History",

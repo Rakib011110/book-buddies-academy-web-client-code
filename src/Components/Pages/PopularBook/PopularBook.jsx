@@ -73,7 +73,7 @@ const PopularBook = () => {
         <hr className="border border-purple-500 mt-5  md:w-full sm:w-1/2 mx-auto" />
 
         <div className="max-w-7xl mx-auto ">
-          <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4">
             {filteredBooks.map((book) => (
               <div>
                 <div>
