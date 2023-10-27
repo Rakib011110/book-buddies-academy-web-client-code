@@ -5,6 +5,7 @@ import PopularBook from "../Pages/PopularBook/PopularBook";
 import Activities from "../Pages/Activities/Activities";
 import Footer from "../Shared/Footer";
 import CoursesClass from "../Pages/CoursesClass/CoursesClass";
+import OurTeacher from "../Pages/OurTeacher/OurTeacher";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <PopularBook />
       <Activities />
       <CoursesClass />
+      <OurTeacher />
     </div>
   );
 };

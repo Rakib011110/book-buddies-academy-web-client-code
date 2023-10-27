@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "title": "Web Developer",
+    "address": "Chatakpur-3, Dhangadhi Kailali",
+    "phone": "+977 9955221114",
+    "email": "john@example.com",
+    "imageUrl": "https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+    "teacherPic": "https://img.freepik.com/free-photo/happy-smiling-young-male-teacher-sitting-school-desk-with-books-pen-notes-front-blackboard-classroom_141793-99214.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1696291200&semt=ais"
+  },
+  {
+    "id": 2,
+    "name": "Alice Smith",
+    "title": "Mathematics Teacher",
+    "address": "123 Elm St, Springfield",
+    "phone": "+1 1234567890",
+    "email": "alice.smith@example.com",
+    "imageUrl": "https://www.gravatar.com/avatar/1acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+    "teacherPic": "https://media.istockphoto.com/id/155773346/photo/portrait-of-teacher-with-in-front-of-blackboard.jpg?s=612x612&w=0&k=20&c=0C0B0dXiBSxpqgExEefeH1Zs_EqV5i13k4zai7n2GsQ="
+  },
+  {
+    "id": 3,
+    "name": "Michael Johnson",
+    "title": "Science Educator",
+    "address": "456 Oak Ave, Rivertown",
+    "phone": "+1 9876543210",
+    "email": "michael.johnson@example.com",
+    "imageUrl": "https://www.gravatar.com/avatar/3acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+    "teacherPic": "https://t4.ftcdn.net/jpg/03/18/40/11/360_F_318401100_0IBVEEmvkfeZybi5C44kRdwEsfl2icEZ.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sarah Davis",
+    "title": "English Teacher",
+    "address": "789 Maple Rd, Groveton",
+    "phone": "+1 4567890123",
+    "email": "sarah.davis@example.com",
+    "imageUrl": "https://www.gravatar.com/avatar/4acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+    "teacherPic": "https://scottalanturner.com/wp-content/uploads/2022/12/Screen-Shot-2022-12-22-at-10.03.55-AM.png"
+  },
+  {
+    "id": 5,
+    "name": "Daniel Wilson",
+    "title": "History Instructor",
+    "address": "890 Pine Ln, Lakeside",
+    "phone": "+1 7890123456",
+    "email": "daniel.wilson@example.com",
+    "imageUrl": "https://www.gravatar.com/avatar/5acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+    "teacherPic": "https://www.graduateprogram.org/wp-content/uploads/2019/11/Oct.-30-How-to-find-Advancement-opportunities-in-your-teaching-career_web-1024x718.webp"
+  },
+  {
+    "id": 6,
+    "name": "Olivia Taylor",
+    "title": "Art Teacher",
+    "address": "567 Cedar Dr, Mountainview",
+    "phone": "+1 2345678901",
+    "email": "olivia.taylor@example.com",
+    "imageUrl": "https://www.gravatar.com/avatar/6acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+    "teacherPic": "https://www.venkateshwaragroup.in/vgiblog/wp-content/uploads/2022/09/Untitled-design-2-1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "James Anderson",
+    "title": "Physical Education Instructor",
+    "address": "234 Birch Ave, Parksville",
+    "phone": "+1 9012345678",
+    "email": "james.anderson@example.com",
+    "imageUrl": "https://www.gravatar.com/avatar/7acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+    "teacherPic": "https://www.science.org/cms/10.1126/science.348.6233.405-a/asset/c1aa4ca0-9867-4028-9075-2b95faf0a4a8/assets/graphic/348_405a_f1.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Munjarid Shahid",
+    "title": "Music Teacher",
+    "address": "345 Pine St, Riverdale",
+    "phone": "+1 3456789012",
+    "email": "laura.martinez@example.com",
+    "imageUrl": "https://www.gravatar.com/avatar/8acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp",
+    "teacherPic": "https://apicms.thestar.com.my/uploads/images/2022/05/15/1585587.jpg"
+  }
+]

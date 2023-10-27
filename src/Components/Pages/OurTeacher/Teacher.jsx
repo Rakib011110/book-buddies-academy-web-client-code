@@ -1,15 +1,15 @@
 import React from "react";
 
 const Teacher = ({ teacher }) => {
-  const { name, title, address, phone, email, imageUrl } = teacher;
+  const { name, title, address, phone, email, teacherPic } = teacher;
 
   return (
     <div className="max-w-xs">
       <div className="bg-white shadow-xl rounded-lg py-3">
-        <div className="photo-wrapper p-2">
+        <div className="photo-wrapper ">
           <img
-            className="w-32 h-32 rounded-full mx-auto"
-            src={imageUrl}
+            className="w-48 h-32 rounded-full mx-auto"
+            src={teacherPic}
             alt={name}
           />
         </div>
@@ -38,15 +38,6 @@ const Teacher = ({ teacher }) => {
               </tr>
             </tbody>
           </table>
-
-          <div className="text-center my-3">
-            <a
-              className="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium"
-              href="#"
-            >
-              View Profile
-            </a>
-          </div>
         </div>
       </div>
     </div>
