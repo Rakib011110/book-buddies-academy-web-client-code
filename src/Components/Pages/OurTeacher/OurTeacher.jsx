@@ -14,7 +14,7 @@ const OurTeacher = () => {
     <div>
       <Titile heading={"OUR TEACHER"} subHeading={"Meet Our Teacher"} />
 
-      <div className="bg-sky-100 mt-10 rounded-full">
+      <div className="bg-sky-100 mt-10 ">
         <div className="  max-w-7xl mx-auto gap-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 ">
           {teachers.map((teacher) => (
             <Teacher teacher={teacher} key={teacher.id} />
