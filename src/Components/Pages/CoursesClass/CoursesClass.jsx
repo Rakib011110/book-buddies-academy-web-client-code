@@ -47,43 +47,29 @@ const CoursesClass = () => {
                 <div className="">
                   <div className=" ">
                     <div>
-                      <div className=" border-2  border-black p-1 shadow-md mb-14 h-[350px] w-72 rounded-md">
+                      <div className=" border-2  border-green-500 p-1 shadow-md mb-14 h-[350px] w-72 rounded-md">
                         <div className="flex justify-center items-center leading-none">
                           <img
                             src={course.class_picture_url}
                             alt="pic"
-                            className="h-44 border-4 border-black w-60 rounded-md shadow-2xl mt-6 transform -translate-y-10 hover:-translate-y-4 transition duration-700"
+                            className="h-44 border-4 border-green-400 w-60 rounded-md shadow-2xl mt-6 transform -translate-y-10 hover:-translate-y-4 transition duration-700"
                           />
                         </div>
                         <div className="p-3 ">
-                          <p>
-                            date {course.joining_deadline} time
-                            <span className="text-green-500">
-                              {" "}
-                              {course.class_location}
-                            </span>
-                          </p>
-
+                          <p>date {course.joining_deadline} time</p>
                           <p className="block mb-1 text-2xl font-extrabold text-orange-500">
                             {course.subject_name}
                           </p>
-
-                          <div className="flex   justify-between ">
-                            <div className="flex  text-sm font-semibold gap-1 text-green-500">
-                              <FaPeopleGroup className="mt-1" />
-
-                              <p>
-                                <span>Seats {course.available_seats}</span>
-                              </p>
-                            </div>
-                            <div className="flex text-sm font-semibold gap-1 text-green-500">
-                              <FaTv className="mt-1" />
-
-                              <p>
-                                <span>Student {course.max_enrollment}</span>
-                              </p>
-                            </div>
-                            <div className="flex text-sm font-semibold gap-1 text-green-500">
+                          <div className="   "></div>
+                          <div className="mt-4">
+                            <div className="flex justify-between text-sm font-semibold gap-1 text-orange-500">
+                              <h1>
+                                {" "}
+                                Teacher :{" "}
+                                <span className="text-green-500 ">
+                                  {course.teacher}
+                                </span>{" "}
+                              </h1>
                               <p>
                                 <button
                                   onClick={() => openModal(course)}
@@ -93,15 +79,6 @@ const CoursesClass = () => {
                                 </button>
                               </p>
                             </div>
-                          </div>
-                          <div className="mt-2">
-                            <h1>
-                              {" "}
-                              Teacher Name:{" "}
-                              <span className="text-green-500">
-                                {course.teacher}
-                              </span>{" "}
-                            </h1>
                           </div>
                         </div>
                       </div>

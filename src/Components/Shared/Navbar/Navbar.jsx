@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaBook, FaSchool, FaShip } from "react-icons/fa";
+import { FaBook, FaBookOpen, FaSchool, FaShip } from "react-icons/fa";
 import logo from "../../../../public/img/Red Simple Cute Online Book Club Logo.png";
 const Navbar = () => {
   const navOptions = (
@@ -54,8 +54,8 @@ const Navbar = () => {
           <Link className=" ">
             {" "}
             <div className=" flex  font-semibold gap-3 text-3xl ">
-              <FaSchool className="text-5xl  text-green-500 "> </FaSchool>
-              <div className="mt-2">
+              <FaBookOpen className="text-5xl  text-orange-500 "> </FaBookOpen>
+              <div className="mt-1">
                 <h1>BOOK BUDIES</h1>
               </div>
             </div>
