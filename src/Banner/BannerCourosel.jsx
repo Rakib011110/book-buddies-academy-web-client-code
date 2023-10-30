@@ -11,6 +11,7 @@ import "./Banner.css";
 
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { FaSearch } from "react-icons/fa";
 
 export default function BannerCourosel() {
   return (
@@ -41,16 +42,27 @@ export default function BannerCourosel() {
               className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
             >
               <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-                <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
+                <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10">
                   <h2 className="font-bold md:text-6xl text-orange-500 my-3">
-                    Explore Our <br /> Books
+                    Explore Our Books
                   </h2>
                   <div>
                     <p className="text-gray-200 font-thin">
-                      Best Dining in Dhaka Division, Bangladesh: See 23652
-                      Tripadvisor traveler reviews of 1076 Dhaka Division
-                      restaurants and search by cuisine, price, location!
+                      A book is a number of pieces of paper, usually with words
+                      printed on them, which are fastened together and fixed
+                      inside a cover of stronger paper or cardboard
                     </p>
+                  </div>
+                  <div className="mt-4 flex justify-center items-center">
+                    <input
+                      type="text"
+                      placeholder="Search Books"
+                      className="bg-transparent border-b border-white text-white py-1 px-2 mr-3 focus:outline-none"
+                    />
+                    <button className="bg-orange-500 text-white py-2 px-4 rounded-full">
+                      <FaSearch className="mr-2" />
+                      Search {/* Use the React Icon */}
+                    </button>
                   </div>
                 </div>
               </div>
@@ -64,7 +76,7 @@ export default function BannerCourosel() {
               className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
             >
               <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-                <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
+                {/* <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
                   <h2 className="font-bold md:text-6xl text-orange-500 my-3">
                     Explore Our Class
                   </h2>
@@ -75,7 +87,7 @@ export default function BannerCourosel() {
                       restaurants and search by cuisine, price, location!
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </Parallax>
           </SwiperSlide>
@@ -87,16 +99,27 @@ export default function BannerCourosel() {
               className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
             >
               <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-                <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
+                <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10">
                   <h2 className="font-bold md:text-6xl text-orange-500 my-3">
-                    WELCOM TO BOOK BUDDIES ACADEMY
+                    WELCOME TO OUR BOOK BUDDIES ACADAMY
                   </h2>
                   <div>
                     <p className="text-gray-200 font-thin">
-                      Best Dining in Dhaka Division, Bangladesh: See 23652
-                      Tripadvisor traveler reviews of 1076 Dhaka Division
-                      restaurants and search by cuisine, price, location!
+                      A book is a number of pieces of paper, usually with words
+                      printed on them, which are fastened together and fixed
+                      inside a cover of stronger paper or cardboard
                     </p>
+                  </div>
+                  <div className="mt-4 flex justify-center items-center">
+                    <input
+                      type="text"
+                      placeholder="Search Books"
+                      className="bg-transparent border-b border-white text-white py-1 px-2 mr-3 focus:outline-none"
+                    />
+                    <button className="bg-orange-500 text-white py-2 px-4 rounded-full">
+                      <FaSearch className="mr-2" />
+                      Search {/* Use the React Icon */}
+                    </button>
                   </div>
                 </div>
               </div>

@@ -25,8 +25,14 @@ const PopularBook = () => {
   });
 
   return (
-    <div className="  mt-28">
-      <div className="sm:flex  justify-center sm:flex-wrap md:flex-nowrap  container mx-auto  gap-16">
+    <div className="  mt-28 max-w-7xl mx-auto">
+      <div className="sm:flex  justify-between sm:flex-wrap md:flex-nowrap  container mx-auto  gap-16">
+        <div className=" border  items-center font-semibold border-orange-400 bg-sky-400   flex p-4 rounded-md">
+          <h2>
+            FIND YOUR THE <span className="text-white">POPULAR BOOKS</span>
+          </h2>
+        </div>
+
         <div className="form-control mb-3">
           <div className="input-group">
             <input
@@ -52,20 +58,6 @@ const PopularBook = () => {
                 />
               </svg>
             </button>
-          </div>
-        </div>
-        <div className="form-control ">
-          <div className="input-group">
-            <select
-              className="select select-bordered w-96"
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-            >
-              <option value="All">All Categories</option>
-              <option value="Fiction">Fiction</option>
-              <option value="Non-Fiction">Fiction</option>
-            </select>
-            <button className="btn">Go</button>
           </div>
         </div>
       </div>

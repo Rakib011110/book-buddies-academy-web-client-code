@@ -59,15 +59,17 @@ const Navbar = () => {
               {/* <FaBookOpen className="text-5xl  text-orange-500 "> </FaBookOpen> */}
               <div>
                 <Lottie
-                  className="  w-20 h-20"
+                  className="  w-20 h-16"
                   loop
                   animationData={logo}
                   play
                 />
               </div>
 
-              <div className="mt-7 font-semibold text-3xl">
-                <h1>BOOK BUDIES</h1>
+              <div className="mt-4 font-semibold text-2xl">
+                <h1>
+                  BOOK <span className="text-orange-500">BUDIES</span>
+                </h1>
               </div>
             </div>
           </Link>
