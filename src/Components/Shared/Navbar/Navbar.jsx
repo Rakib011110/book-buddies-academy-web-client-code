@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaBook, FaBookOpen, FaSchool, FaShip } from "react-icons/fa";
-import logo from "../../../../public/img/Red Simple Cute Online Book Club Logo.png";
+import logo from "../../../../public/img/Animation/book2json.json";
+import Lottie from "react-lottie-player";
+
 const Navbar = () => {
   const navOptions = (
     <>
@@ -53,9 +55,18 @@ const Navbar = () => {
           </div>
           <Link className=" ">
             {" "}
-            <div className=" flex  font-semibold gap-3 text-3xl ">
-              <FaBookOpen className="text-5xl  text-orange-500 "> </FaBookOpen>
-              <div className="mt-1">
+            <div className=" flex   gap-3  ">
+              {/* <FaBookOpen className="text-5xl  text-orange-500 "> </FaBookOpen> */}
+              <div>
+                <Lottie
+                  className="  w-20 h-20"
+                  loop
+                  animationData={logo}
+                  play
+                />
+              </div>
+
+              <div className="mt-7 font-semibold text-3xl">
                 <h1>BOOK BUDIES</h1>
               </div>
             </div>

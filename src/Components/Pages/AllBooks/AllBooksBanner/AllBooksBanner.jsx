@@ -1,10 +1,12 @@
 import React from "react";
+import animationBook from "../../../../../public/img/Animation/reading-books.json";
+import Lottie from "react-lottie-player";
 
 const AllBooksBanner = () => {
   return (
     <div>
       <div className="mx-auto container py-12 px-6 xl:px-0 flex justify-center items-center flex-col">
-        <div className="flex justify-between bg-gray-50 items-stretch flex-row">
+        <div className="flex justify-between bg-sky-400 items-stretch flex-row">
           <div className="flex items-center bg-gray-800 justify-center">
             <p className="transform flex flex-shrink-0 -rotate-90 text-2xl font-semibold tracking-wide leading-normal text-white">
               50% OFF
@@ -13,7 +15,7 @@ const AllBooksBanner = () => {
           <div className="flex justify-center items-start flex-col xl:w-2/5 md:w-5/12 xl:px-7 px-6 md:px-0 md:py-0 py-5">
             <div>
               <p className="text-3xl xl:text-4xl font-semibold leading-9 text-gray-800">
-                Act before it’s too late!
+                FIND YOU FAVOURIT <span className="text-white">BOOK</span>
               </p>
             </div>
             <div className="xl:mt-4 mt-2">
@@ -23,22 +25,18 @@ const AllBooksBanner = () => {
               </p>
             </div>
           </div>
-          <div className="hidden md:block h-44 md:h-60 xl:h-72">
-            <img
-              className="hidden h-full xl:block"
-              src="https://i.ibb.co/xGZ4hRm/pexels-dmitry-zvolskiy-2082090-1.png"
-              alt="pexels-dmitry-zvolskiy-2082090-1"
-            />
-            <img
-              className="xl:hidden h-full"
-              src="https://i.ibb.co/KWgn5zQ/pexels-dmitry-zvolskiy-2082090-1-1.png"
-              alt="pexels-dmitry-zvolskiy-2082090-1-1"
+          <div className="">
+            <Lottie
+              className="hidden md:block h-44 md:h-60 xl:h-72"
+              loop
+              animationData={animationBook}
+              play
             />
           </div>
         </div>
         <div className="md:hidden mt-6 w-full">
           <img
-            src="https://i.ibb.co/xGZ4hRm/pexels-dmitry-zvolskiy-2082090-1.png"
+            src="https://www.books2door.com/cdn/shop/files/B2D_collections_-_kids_books_1000x1000.jpg?v=1692354555"
             alt="pexels-dmitry-zvolskiy-2082090-1"
             className="w-full"
           />
