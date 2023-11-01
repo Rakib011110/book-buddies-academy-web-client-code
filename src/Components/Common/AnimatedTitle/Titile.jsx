@@ -5,7 +5,7 @@
 //   return (
 //     <div>
 //       <div id="wrapper" className="mx-auto text-center">
-//         {/* <div id="bar" className="w-1/2"></div> */}
+//
 //         <div id="bar2" className=""></div>
 //         <h1>
 //           <div className="main">
