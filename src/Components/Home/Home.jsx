@@ -16,6 +16,9 @@ const Home = () => {
       <Activities />
       <CoursesClass />
       <OurTeacher />
+      <div className="">
+        <Footer />
+      </div>
     </div>
   );
 };
