@@ -1,183 +1,108 @@
-import { Player } from "@lottiefiles/react-lottie-player";
 import React, { useContext, useState } from "react";
-import { FaGithub, FaGoogle } from "react-icons/fa";
-import { useLocation, useNavigate } from "react-router-dom";
-import { Link } from "react-scroll";
-import { ToastContainer, toast } from "react-toastify";
 import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Login = () => {
-  const { signin, githulogin, googleSignIn } = useContext(AuthContext);
-  const navigate = useNavigate();
-  const location = useLocation();
-  let from = location.state?.from?.pathname || "/";
-  const [error, setErr] = useState("");
+  const { login } = useContext(AuthContext);
 
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(password);
-
-    signin(email, password)
+    login(email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user);
-        navigate(from, { replace: true });
-        if (user) {
-          toast("Acount login Success");
-        }
-      })
-      .catch((error) => {
-        const errorMessage = error.message;
-        console.log(errorMessage);
-        setErr(errorMessage);
-      });
-  };
-
-  const handleGooglesignIn = () => {
-    googleSignIn()
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        console.log(user);
-        navigate(from, { replace: true });
-
-        if (user) {
-          toast("Acount Create Success");
-        }
-        // ...
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorMessage);
-        // ..
-      });
-  };
-
-  const handlegithublogin = () => {
-    githulogin()
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        console.log(user);
-        navigate(from, { replace: true });
-
-        if (user) {
-          toast("Acount Create Success");
-        }
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorMessage);
-        // ..
       });
   };
 
   return (
-    <div>
-      <div className="hero h-full bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          {/* <div className="text-center lg:text-left">
-            <Player
-              className=" rounded-lg  sm:w-[500px] sm:h-[500px]"
-              autoplay
-              loop
-              src=""
-              // style={{ height: "500px", width: "700px" }}
-            ></Player>
-          </div> */}
-          <div className="card p-3 h-full flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <h1 className="text-5xl font-bold text-indigo-600">Login now!</h1>
-
-            <form onSubmit={handleLogin} className="card-body">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your Email"
-                  required
-                  className="input input-bordered"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Password</span>
-                </label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Your Password"
-                  required
-                  className="input input-bordered"
-                />
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
-                </label>
-              </div>
-              <div className="form-control mt-6">
-                <input
-                  className="btn btn-primary bg-indigo-600"
-                  type="submit"
-                  value="Register"
-                />
-              </div>
-            </form>
-
-            <div className="flex  flex-row w-96 mr-6 items-center justify-center lg:justify-start">
-              <p className="mb-0 mr-28 text-lg"></p>
-
-              <button
-                onClick={handlegithublogin}
-                type="button"
-                data-te-ripple-init
-                data-te-ripple-color="light"
-                className="mx-1 h-9 w-9 bg-indigo-600 rounded-full\register  uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-              >
-                <FaGithub className="mx-auto h-3.5 w-3.5" />
-              </button>
-
-              <button
-                onClick={handleGooglesignIn}
-                type="button"
-                data-te-ripple-init
-                data-te-ripple-color="light"
-                className="mx-1 h-9 w-9 bg-indigo-600 rounded-full  uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-              >
-                <FaGoogle className="mx-auto h-3.5 w-3.5" />
-              </button>
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md">
+        <h2 className="text-3xl font-bold mb-6 text-center text-white">
+          <span className="bg-gradient-to-r text-transparent from-blue-500 to-purple-500 bg-clip-text">
+            LogIn
+          </span>
+        </h2>
+        <form onSubmit={handleLogin}>
+          <div className="mb-6">
+            <label
+              htmlFor="email"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              <i className="fas fa-envelope mr-2"></i>Email
+            </label>
+            <div>
+              <input
+                name="email"
+                id="email"
+                type="email"
+                className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Enter your email"
+              />
             </div>
-            <p className="text-danger">{error} </p>
-
-            <p className="mt-4">
-              Don't Have Account
-              <Link className="text-indigo-600" to="/register">
-                {" "}
-                Register{" "}
-              </Link>{" "}
-            </p>
-            <ToastContainer />
           </div>
-
-          <div className="text-center lg:text-left">
-            <Player
-              className=" rounded-lg  sm:w-[500px] sm:h-[500px]"
-              autoplay
-              loop
-              src="https://assets6.lottiefiles.com/packages/lf20_nc1bp7st.json"
-              // style={{ height: "500px", width: "700px" }}
-            ></Player>
+          <div className="mb-6">
+            <label
+              htmlFor="password"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              <i className="fas fa-lock mr-2"></i>Password
+            </label>
+            <div>
+              <input
+                name="password"
+                id="password"
+                type="password"
+                className="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Enter your password"
+              />
+            </div>
+          </div>
+          <div className="flex items-center justify-center">
+            <button
+              type="submit"
+              className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+            >
+              LogIn
+            </button>
+          </div>
+          <div className="text-center mt-4">
+            <a href="#" className="text-gray-600 hover:underline">
+              Forgot password?
+            </a>
+          </div>
+        </form>
+        <p className="text-center text-gray-600 mt-6">
+          Don't have an account?{" "}
+          <a href="#" className="text-blue-500 hover:underline">
+            Sign up
+          </a>
+        </p>
+        <div className="mt-4">
+          <p className="text-center text-gray-600">Or log in with:</p>
+          <div className="flex justify-center mt-2">
+            <a
+              href="#"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2"
+            >
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              className="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded mx-2"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a
+              href="#"
+              className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mx-2"
+            >
+              <i className="fab fa-google"></i>
+            </a>
           </div>
         </div>
       </div>
