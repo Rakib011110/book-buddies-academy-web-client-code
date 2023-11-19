@@ -5,16 +5,16 @@ const Teacher = ({ teacher }) => {
 
   return (
     <div className="max-w-xs border-2 border-green-400 rounded-2xl ">
-      <div className="bg-white shadow-xl rounded-lg py-3">
+      <div className="bg-white shadow-xl font-sans  rounded-lg py-3">
         <div className="photo-wrapper ">
           <img
-            className="w-48 border-2 border-green-400  rounded-full mx-auto"
+            className="w-48 border-2 border-green-400 font-sans rounded-full mx-auto"
             src={teacherPic}
             alt={name}
           />
         </div>
         <div className=" font-serif p-1">
-          <h3 className="text-center text-xl text-gray-900 font-medium leading-8">
+          <h3 className="text-center text-xl text-gray-900 font-sans font-medium ">
             {name}
           </h3>
           <div className="text-center text-green-400 text-xs font-semibold">

@@ -7,18 +7,26 @@ import Footer from "../Shared/Footer";
 import CoursesClass from "../Pages/CoursesClass/CoursesClass";
 import OurTeacher from "../Pages/OurTeacher/OurTeacher";
 import StudentReviews from "../Pages/StudentReviews/StudentReviews";
+import AllBooksBanner from "../Pages/AllBooks/AllBooksBanner/AllBooksBanner";
+import ReviewSection from "../Pages/StudentReviews/StudentReviews";
 
 const Home = () => {
   return (
-    <div className="bg-gradient-to-r  h-screen">
-      <Banner></Banner>;
-      <Logo />
-      <PopularBook />
-      <Activities />
-      <CoursesClass />
-      <OurTeacher />
+    <div className="   ">
+      <Banner />
+
+      <div className="bg-sky-300">
+        <PopularBook />
+        <Activities />
+      </div>
+
+      <div className="bg-sky-300">
+        <CoursesClass />
+        <OurTeacher />
+      </div>
+
       <div className="mt-28">
-        <StudentReviews />
+        <ReviewSection />
       </div>
       <div className="">
         <Footer />

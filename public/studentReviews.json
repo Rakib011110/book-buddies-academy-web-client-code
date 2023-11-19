@@ -1,0 +1,114 @@
+[
+  {
+    "student_name": "Emma Johnson",
+    "student_email": "emma.johnson@example.com",
+    "comment": "I really enjoyed the Physics class with Mr. John Smith. The hands-on experiments were fascinating, and it helped me understand complex concepts easily.",
+    "subject_name": "Physics",
+    "student_picture_url": "https://media.istockphoto.com/id/1372481295/photo/photo-of-school-boy-wear-yellow-t-shirt-backpack-in-background-stock-photo.jpg?s=612x612&w=0&k=20&c=lRsVHozgtzpj9W6ZjEW2g2qTkh4iV4BLePFgvUt7kvE="
+  },
+  {
+    "student_name": "Noah Davis",
+    "student_email": "noah.davis@example.com",
+    "comment": "Chemistry with Ms. Lisa Johnson was a blast! The experiments were engaging, and I learned a lot about chemical reactions and the properties of matter.",
+    "subject_name": "Chemistry",
+    "student_picture_url": "https://media.istockphoto.com/id/1160532119/photo/young-cute-indian-child-standing-over-white-background.jpg?s=612x612&w=0&k=20&c=Kiq5C_1sWA4OPzeDelTTgUvOhtHAxot4vHD0tYfKvqU="
+  },
+  {
+    "student_name": "Olivia Brown",
+    "student_email": "olivia.brown@example.com",
+    "comment": "Mr. Michael Davis made Biology come to life! The interactive lessons and experiments made learning about cells and genetics so much fun.",
+    "subject_name": "Biology",
+    "student_picture_url": "https://media.istockphoto.com/id/1181906062/photo/cute-girl-studying-against-plain-background.jpg?s=612x612&w=0&k=20&c=KLc-q4NmWdgF3TYKQ49SghAggRwL5NROtRaNUaYr0OM="
+  },
+  {
+    "student_name": "Liam Smith",
+    "student_email": "liam.smith@example.com",
+    "comment": "I loved the Mathematics class with Ms. Emily Brown. The lessons were challenging yet enjoyable, and I feel more confident in my math skills now.",
+    "subject_name": "Mathematics",
+    "student_picture_url": "https://static.vecteezy.com/system/resources/thumbnails/003/460/658/small/asian-male-student-portrait-isolated-on-blue-background-photo.jpg"
+  },
+  {
+    "student_name": "Ava Lee",
+    "student_email": "ava.lee@example.com",
+    "comment": "Visual Arts with Ms. Sophia Lee allowed me to express my creativity. The diverse art forms we explored, from painting to sculpture, were inspiring.",
+    "subject_name": "Visual Arts",
+    "student_picture_url": "https://img.freepik.com/free-photo/cute-girl-holding-book-laptop-office_1303-25508.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1698969600&semt=ais"
+  },
+  {
+    "student_name": "Ethan Wilson",
+    "student_email": "ethan.wilson@example.com",
+    "comment": "Music class with Mr. David Wilson was fantastic! I learned to play instruments and understand musical theory. It's a great class for music enthusiasts.",
+    "subject_name": "Music",
+    "student_picture_url": "https://media.istockphoto.com/id/1442195007/photo/a-young-student-studying-with-his-hand-on-his-chin-and-an-open-book.jpg?s=612x612&w=0&k=20&c=DgCoo2dtWKnaHne3dFU6ZxyOOhLqXPwhLI1E4VgpLL8="
+  },
+  {
+    "student_name": "Mia Martinez",
+    "student_email": "mia.martinez@example.com",
+    "comment": "Dance class with Ms. Alexa Martinez was so much fun! I learned different dance styles and choreography, and it was a great way to stay active.",
+    "subject_name": "Dance",
+    "student_picture_url": "https://img.freepik.com/premium-photo/cute-schoolboy-with-books-backpack_255667-23199.jpg?size=626&ext=jpg&ga=GA1.1.1853869782.1696982400&semt=ais"
+  },
+  {
+    "student_name": "Jackson Johnson",
+    "student_email": "jackson.johnson@example.com",
+    "comment": "The Drama class with Mr. Andrew Johnson was a highlight! I learned acting techniques and gained confidence in performing on stage.",
+    "subject_name": "Drama",
+    "student_picture_url": "https://img.freepik.com/free-photo/schoolboy-with-thumbs-up-hands-apart_23-2147664291.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699660800&semt=ais"
+  },
+  {
+    "student_name": "Sophie Green",
+    "student_email": "sophie.green@example.com",
+    "comment": "Ancient History with Mr. Samuel Green was fascinating. Exploring ancient civilizations and their cultures gave me a new perspective on history.",
+    "subject_name": "Ancient History",
+    "student_picture_url": "https://media.istockphoto.com/id/1372481295/photo/photo-of-school-boy-wear-yellow-t-shirt-backpack-in-background-stock-photo.jpg?s=612x612&w=0&k=20&c=lRsVHozgtzpj9W6ZjEW2g2qTkh4iV4BLePFgvUt7kvE="
+  },
+  {
+    "student_name": "Daniel Turner",
+    "student_email": "daniel.turner@example.com",
+    "comment": "Ms. Olivia Turner's Modern History class was thought-provoking. Examining major events that shaped the modern world was both interesting and informative.",
+    "subject_name": "Modern History",
+    "student_picture_url": "https://st2.depositphotos.com/1017986/9501/i/450/depositphotos_95017260-stock-photo-happy-student-boy-with-school.jpg"
+  },
+  {
+    "student_name": "Emma Miller",
+    "student_email": "emma.miller@example.com",
+    "comment": "World History with Mr. Daniel Miller provided a global perspective on historical eras. It was a journey through cultures and key events that shaped our world.",
+    "subject_name": "World History",
+    "student_picture_url": "https://img.freepik.com/premium-photo/asian-adorable-toddler-smiling-happy-wearing-student-thai-uniform-red-pants-stand-books-study_143683-3011.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699574400&semt=ais"
+  },
+  {
+    "student_name": "Owen Davis",
+    "student_email": "owen.davis@example.com",
+    "comment": "European History with Ms. Sophie Davis was captivating. Delving into the rich tapestry of European history was both educational and enjoyable.",
+    "subject_name": "European History",
+    "student_picture_url": "https://img.freepik.com/free-photo/confused-young-school-boy-wearing-backpack-with-cap-holding-books-spreading-hand_141793-129881.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1698796800&semt=ais"
+  },
+  {
+    "student_name": "Grace Brown",
+    "student_email": "grace.brown@example.com",
+    "comment": "Gymnastics with Mr. Matthew Brown was a fantastic experience. I improved my skills and had a lot of fun staying active and healthy.",
+    "subject_name": "Gymnastics",
+    "student_picture_url": "https://media.istockphoto.com/id/1372481295/photo/photo-of-school-boy-wear-yellow-t-shirt-backpack-in-background-stock-photo.jpg?s=612x612&w=0&k=20&c=lRsVHozgtzpj9W6ZjEW2g2qTkh4iV4BLePFgvUt7kvE="
+  },
+  {
+    "student_name": "Lucas Smith",
+    "student_email": "lucas.smith@example.com",
+    "comment": "Swimming class with Ms. Laura Smith was refreshing. I learned essential strokes and improved my aquatic abilities in a fun and supportive environment.",
+    "subject_name": "Swimming",
+    "student_picture_url": "https://media.istockphoto.com/id/1160532119/photo/young-cute-indian-child-standing-over-white-background.jpg?s=612x612&w=0&k=20&c=Kiq5C_1sWA4OPzeDelTTgUvOhtHAxot4vHD0tYfKvqU="
+  },
+  {
+    "student_name": "Avery Clark",
+    "student_email": "avery.clark@example.com",
+    "comment": "Athletics with Mr. Peter Clark was intense and rewarding. Focusing on sprinting, jumping, and endurance training made me feel like a champion!",
+    "subject_name": "Athletics",
+    "student_picture_url": "https://media.istockphoto.com/id/1181906062/photo/cute-girl-studying-against-plain-background.jpg?s=612x612&w=0&k=20&c=KLc-q4NmWdgF3TYKQ49SghAggRwL5NROtRaNUaYr0OM="
+  },
+  {
+    "student_name": "Lily Turner",
+    "student_email": "lily.turner@example.com",
+    "comment": "Yoga with Ms. Sophie Turner was a peaceful and rejuvenating experience. I learned poses, breathing techniques, and meditation for improved flexibility and focus.",
+    "subject_name": "Yoga",
+    "student_picture_url": "https://img.freepik.com/premium-photo/teenage-school-girl-with-books-schoolgirl-student-excited-teenager-amazed-cheerful-emotions_545934-60649.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696464000&semt=ais"
+  }
+]

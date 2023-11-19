@@ -7,7 +7,6 @@ import Lottie from "react-lottie-player";
 const Navbar = () => {
   const navOptions = (
     <>
-      innnnnph
       <li className="font-semibold text-lg">
         <Link to="/allBooks">
           {" "}
@@ -15,7 +14,7 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="font-semibold text-lg">
-        <Link to="/">SCHOOLS </Link>
+        <Link to="/"> CHOOSE CLASS </Link>
       </li>
       <li className="font-semibold text-lg">
         <Link to="/">BLOG</Link>

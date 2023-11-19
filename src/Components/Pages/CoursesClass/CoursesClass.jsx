@@ -35,11 +35,17 @@ const CoursesClass = () => {
 
   return (
     <div>
-      <Titile
-        heading={"OUR  CLASS"}
-        subHeading={"Choose Your Favourit Class"}
-      />
-      <div className="bg-sky-100 rounded-b-full ">
+      <div className="w-full h-52  bg-white">
+        <Titile
+          className=""
+          heading={"OUR  CLASS"}
+          subHeading={"Choose Your Favourit Class"}
+        />
+      </div>
+      <div
+        className="bg-sky-100 rounded-b-full 
+      "
+      >
         <div className="grid  max-w-7xl mx-auto grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-1 place-items-center uppercase">
           {coursClass.map((course) => (
             <div>
@@ -52,7 +58,7 @@ const CoursesClass = () => {
                           <img
                             src={course.class_picture_url}
                             alt="pic"
-                            className="h-44 border-4 border-green-400 w-60 rounded-md shadow-2xl mt-6 transform -translate-y-10 hover:-translate-y-4 transition duration-700"
+                            className="h-44 border-4 border-green-400 w-60 rounded-md shadow-2xl mt- transform -translate-y-10 hover:-translate-y-4 transition duration-700"
                           />
                         </div>
                         <div className="p-3 ">

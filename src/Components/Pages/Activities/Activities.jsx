@@ -32,10 +32,10 @@ const Activities = () => {
 
   return (
     <div className="mt-44 ">
-      <Titile
+      {/* <Titile
         heading={"  Gallary"}
         subHeading={" Wellcome to book buddies"}
-      ></Titile>
+      ></Titile> */}
 
       <div className="bg-sky-100 rounded-t-full">
         <div>

@@ -1,66 +1,60 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 import { FaPlus } from "react-icons/fa";
+import { AiFillStar } from "react-icons/ai";
+import Titile from "../../Shared/Ttitle/Titile";
 
 const StudentReviews = () => {
-  const data = [
-    {
-      name: "",
-      SocialPic: "https://i.ibb.co/xgYrGJQ/pngwing-com-12.png",
-      esponredPic: "",
-    },
-    {
-      SocialPic: "https://i.ibb.co/J285tWN/pngwing-com-11.png",
-      esponredPic: "",
-    },
-    {
-      name: "",
-      SocialPic: "https://i.ibb.co/y4fhvWp/pngwing-com-8.png",
-      esponredPic: "",
-    },
-  ];
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    fetch("studentReviews.json")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
 
   return (
     <div>
-      <div className="max-w-7xl ml-auto mr-auto flex  items-start  shadow-2xl  rounded-2xl border-l-2 p-2  ">
-        <Marquee
-          className="rounded-r-3xl border-r-4"
-          direction="right"
-          speed={50}
-          gradientColor={[0, 0, 0]}
-          gradientWidth={30}
-        >
-          {data.map((item, index) => (
-            <div>
+      <Titile heading={"Reviews "} subHeading={"Explore Our Student Reviews"} />
+
+      <div className="bg-sky-200 rounded-3xl">
+        <div className="max-w-7xl ml-auto   mr-auto flex border-t-0 items-start  border  rounded-2xl border-l-2   ">
+          <Marquee
+            className="rounded-r-3xl border-r-4"
+            direction="right"
+            speed={50}
+            gradientColor={[0, 0, 0]}
+            gradientWidth={30}
+          >
+            {reviews.map((item, index) => (
               <div>
-                <div className="">
-                  <div className=" ">
-                    <div>
-                      <div className=" border-2   border-green-500  p-1 shadow-md mb-14 h-[350px] w-72 rounded-md">
-                        <div className="flex justify-center mt-5  items-center leading-none">
-                          <img
-                            src={item.SocialPic}
-                            alt="pic"
-                            className="h-44 border-4  rounded-full border-green-400 w-60  shadow-2xl mt-6 transform -translate-y-10 hover:-translate-y-4 transition duration-700"
-                          />
-                        </div>
-                        <div className="p-3 ">
-                          <p>date time</p>
-                          <p className="block mb-1 text-2xl font-extrabold text-orange-500"></p>
-                          <div className="   "></div>
-                          <div className="mt-4">
-                            <div className="flex justify-between text-sm font-semibold gap-1 text-orange-500">
-                              <h1>
-                                {" "}
-                                Teacher :{" "}
-                                <span className="text-green-500 "></span>{" "}
-                              </h1>
-                              <p>
-                                <button className="btn-sm btn-outline text-white bg-orange-500 rounded-xl">
-                                  <FaPlus />
-                                </button>
-                              </p>
-                            </div>
+                <div>
+                  <div>
+                    <div className="card md:w-h-62 md:h- w-64 h-66 shadow-xl mt-20 bg-[#121a23] border-4 border-green-400 flex-col flex items-center ">
+                      <img
+                        src={item.student_picture_url}
+                        alt={item.student_picture_url}
+                        className=" cus-rounded md:h-32 md:w-40  h-20 rounded-full w-36 -top-20 absolute border-4"
+                      />
+                      <div className="card-body md:mt-7 mt-1">
+                        <div className="flex flex-col items-center text-center">
+                          <h2 className="card-title text-white uppercase ">
+                            {item.student_name}
+                          </h2>
+                          <p className="md:text-sm  text-green-400">
+                            Subject : {item.subject_name}
+                          </p>
+                          <p className="md:text-sm pt-2 text-white">
+                            {item.comment.slice(0, 100)}..
+                          </p>
+
+                          <div className="flex items-center mt-1 text-2xl ">
+                            {" "}
+                            <AiFillStar className=" text-yellow-400" />
+                            <AiFillStar className=" text-yellow-400" />
+                            <AiFillStar className=" text-yellow-400" />
+                            <AiFillStar className=" text-yellow-400" />
+                            <AiFillStar className=" text-yellow-400" />
                           </div>
                         </div>
                       </div>
@@ -68,9 +62,9 @@ const StudentReviews = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Marquee>
+            ))}
+          </Marquee>
+        </div>
       </div>
     </div>
   );
