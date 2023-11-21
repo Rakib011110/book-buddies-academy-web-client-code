@@ -4,6 +4,8 @@ import Main from "../src/MainLayout/Main";
 import AllBooks from "../src/Components/Pages/AllBooks/AllBooks";
 import Login from "../src/Components/Pages/Login/Login";
 import Register from "../src/Components/Pages/Register/Register";
+import AllClass from "../src/Components/Pages/AllClass/AllClass";
+import Blog from "../src/Components/Pages/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: "/allBooks",
         element: <AllBooks />,
+      },
+      {
+        path: "/allClass",
+        element: <AllClass />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
       {
         path: "/login",

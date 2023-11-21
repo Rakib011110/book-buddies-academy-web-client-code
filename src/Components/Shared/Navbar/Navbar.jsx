@@ -14,10 +14,10 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="font-semibold text-lg">
-        <Link to="/"> CHOOSE CLASS </Link>
+        <Link to="/allClass"> ALL CLASS </Link>
       </li>
       <li className="font-semibold text-lg">
-        <Link to="/">BLOG</Link>
+        <Link to="/blog">BLOG</Link>
       </li>
       <li className="font-semibold text-lg">
         <Link to="/">CONTACT</Link>

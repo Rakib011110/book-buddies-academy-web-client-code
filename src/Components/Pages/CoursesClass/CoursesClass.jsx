@@ -53,7 +53,7 @@ const CoursesClass = () => {
                 <div className="">
                   <div className=" ">
                     <div>
-                      <div className=" border-2  border-green-500 p-1 shadow-md mb-14 h-[350px] w-72 rounded-md">
+                      <div className=" border-2  border-green-500 p-1 shadow-md mb-14 h-[300px] w-72 rounded-md">
                         <div className="flex justify-center items-center leading-none">
                           <img
                             src={course.class_picture_url}
@@ -62,12 +62,12 @@ const CoursesClass = () => {
                           />
                         </div>
                         <div className="p-3 ">
-                          <p>date {course.joining_deadline} time</p>
+                          <p>Joining date {course.joining_deadline} time</p>
                           <p className="block mb-1 text-2xl font-extrabold text-orange-500">
                             {course.subject_name}
                           </p>
                           <div className="   "></div>
-                          <div className="mt-4">
+                          <div className="mt-">
                             <div className="flex justify-between text-sm font-semibold gap-1 text-orange-500">
                               <h1>
                                 {" "}

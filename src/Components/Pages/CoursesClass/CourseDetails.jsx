@@ -17,48 +17,40 @@ const CourseDetails = ({ closeModal, course }) => {
   } = course;
 
   return (
-    <div className="card card-side bg-base-100 shadow-xl p-6 border border-green-400 rounded-lg">
-      <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/3 md:mr-6 mb-4 md:mb-0">
-          <figure>
+    <div>
+      <div class="flex flex-col justify-center h-screen">
+        <div class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+          <div class="w-full md:w-1/3 bg-white grid place-items-center">
             <img
               src={class_picture_url}
-              alt={subject_name}
-              className="w-full h-auto"
+              alt="tailwind logo"
+              class="rounded-xl"
             />
-          </figure>
-        </div>
-        <div className="md:w-2/3">
-          <h2 className="card-title text-orange-500 mb-2">{subject_name}</h2>
-          <p className="mb-4">{class_description}</p>
-          <div className="flex flex-wrap mb-4">
-            <div className="w-full md:w-1/2 mb-2">
-              <strong>Teacher:</strong> {teacher}
-            </div>
-            <div className="w-full md:w-1/2 mb-2">
-              <strong>Class Size:</strong> {class_size}
-            </div>
-            <div className="w-full md:w-1/2 mb-2">
-              <strong>Available Seats:</strong> {available_seats}
-            </div>
-            <div className="w-full md:w-1/2 mb-2">
-              <strong>Class Location:</strong> {class_location}
-            </div>
-            <div className="w-full md:w-1/2 mb-2">
-              <strong>Eligibility:</strong> {eligibility}
-            </div>
-            <div className="w-full md:w-1/2 mb-2">
-              <strong>Max Enrollment:</strong> {max_enrollment}
-            </div>
-            <div className="w-full md:w-1/2 mb-2">
-              <strong>Joining Deadline:</strong> {joining_deadline}
-            </div>
-            <div className="w-full md:w-1/2 mb-2">
-              <strong>Enrollment Price:</strong> {enrollment_price}
-            </div>
           </div>
-          <div className="card-actions flex  md:justify-end  sm:justify-start">
-            <button className="btn btn-primary">Watch</button>
+          <div class="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
+            <div class="flex justify-between item-center">
+              <p class="text-gray-500 font-medium hidden md:block">
+                Teacher Name : {teacher}{" "}
+              </p>
+              <div>{/*  */}</div>
+              <div class="bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md:block">
+                Fees : {enrollment_price}
+              </div>
+            </div>
+            <h3 class="font-black text-gray-800 md:text-3xl text-xl">
+              {subject_name}
+            </h3>
+            <p class="md:text-lg text-gray-500 text-base">
+              {class_description}
+            </p>
+            <p class="text-md font-black text-gray-800">
+              Joining deadline : {joining_deadline}+
+              <span class="font-normal text-gray-600 text-base"></span>
+            </p>
+            <p class="text-md font-black text-gray-800">
+              Eligibility : {eligibility}
+              <span class="font-normal text-gray-600 text-base"></span>
+            </p>
             <button
               onClick={() => closeModal()}
               className="btn btn-primary ml-2"
