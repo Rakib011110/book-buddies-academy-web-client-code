@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { FaBook, FaBookOpen, FaSchool, FaShip } from "react-icons/fa";
 import logo from "../../../../public/img/Animation/book2json.json";
 import Lottie from "react-lottie-player";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user);
+
+  const hanldeLogout = () => {
+    logOut().then().then();
+  };
   const navOptions = (
     <>
       <li className="font-semibold text-lg">
@@ -78,9 +85,23 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login" className="btn">
-            Login
-          </Link>
+          {user ? (
+            <div className="flex gap-7">
+              {" "}
+              <div className="rounded-full w-12">
+                <button> {user.displayName} </button>
+              </div>
+              <div>
+                <button onClick={hanldeLogout} className="btn btn-sm">
+                  Logout
+                </button>
+              </div>
+            </div>
+          ) : (
+            <Link to="/login" className="btn">
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </div>

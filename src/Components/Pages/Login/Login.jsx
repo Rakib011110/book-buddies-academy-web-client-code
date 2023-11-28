@@ -1,21 +1,42 @@
-import React, { useContext, useState } from "react";
+import { useContext } from "react";
+import { FaGithub, FaGoogle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Login = () => {
-  const { login } = useContext(AuthContext);
+  const { login, googleSignIn } = useContext(AuthContext);
+  const from = location.state?.from?.pathname || "/";
 
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
+
     login(email, password)
       .then((userCredential) => {
         const user = userCredential.user;
+        console.log(user);
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+      });
+  };
+
+  const handleGoogleSignIn = () => {
+    googleSignIn()
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+        navigate(from, { replace: true });
+        if (user) {
+          toast("Logged in with Google successfully");
+        }
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
       });
   };
 
@@ -78,30 +99,25 @@ const Login = () => {
         </form>
         <p className="text-center text-gray-600 mt-6">
           Don't have an account?{" "}
-          <a href="#" className="text-blue-500 hover:underline">
+          <Link to="/register" className="text-blue-500 hover:underline">
             Sign up
-          </a>
+          </Link>
         </p>
         <div className="mt-4">
           <p className="text-center text-gray-600">Or log in with:</p>
           <div className="flex justify-center mt-2">
             <a
               href="#"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2"
+              className="bg-blue-600 btn hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2"
             >
-              <i className="fab fa-facebook-f"></i>
+              <FaGithub />
             </a>
+
             <a
-              href="#"
-              className="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded mx-2"
+              onClick={handleGoogleSignIn}
+              className="bg-red-600 btn hover:bg-red-700 text-white font-bold py-2 px-4 rounded mx-2"
             >
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a
-              href="#"
-              className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mx-2"
-            >
-              <i className="fab fa-google"></i>
+              <FaGoogle />
             </a>
           </div>
         </div>
