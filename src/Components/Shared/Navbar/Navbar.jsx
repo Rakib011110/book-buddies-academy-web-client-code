@@ -63,7 +63,7 @@ const Navbar = () => {
           <Link className=" ">
             {" "}
             <div className=" flex   gap-3  ">
-              {/* <FaBookOpen className="text-5xl  text-orange-500 "> </FaBookOpen> */}
+              {/* <FaBookOpen className=" "> </FaBookOpen> */}
               <div>
                 <Lottie
                   className="  w-20 h-16"
